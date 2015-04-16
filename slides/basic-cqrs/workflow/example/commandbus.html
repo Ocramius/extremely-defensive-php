@@ -1,8 +1,0 @@
-<pre><code>&lt;?php
-    // CommandsBus + Commands + Command Handlers Example
-
-    $handlers = [RegisterUser::class => HandlerRegisterUser::class];
-
-    $commandBus = new CommandBus($handlers);
-
-    $commandBus->push(new RegisterUser('ocramius'));</code></pre>

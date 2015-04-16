@@ -1,74 +1,8 @@
 [
-    "introduction/kittens.html",
+    "introduction/intro.html",
     "introduction/i-am-marco.html",
     "introduction/i-work-for.html",
 
-    "final-classes/final-classes.html",
-    "final-classes/there-is-a-blogpost.html",
-    "final-classes/read-it.html",
-    "final-classes/i-am-not-talking-about-it.html",
-
-    "applications-suck/let-s-talk-about-something-important.html",
-    "applications-suck/our-applications-suck/our.html",
-    "applications-suck/our-applications-suck/applications.html",
-    "applications-suck/our-applications-suck/suck.html",
-
-    "applications-suck/crud/we-build-massive-piles-of.html",
-    "applications-suck/crud/crud.html",
-    "applications-suck/crud/crud-is-horrible.html",
-
-    "application-example/why-you-ask.html",
-    "application-example/we-started-building-behavior-around-state.html",
-    "application-example/bad-example/invoice-controller.html",
-    "application-example/bad-example/creating-an-invoice-is-not-about-saving-it.html",
-    "application-example/bad-example/contract-controller.html",
-    "application-example/bad-example/contract-controller-stamp.html",
-    "application-example/bad-example/terminating-a-contract-is-not-the-same-as-updating-it.html",
-
-    "intent/our-code-does-not-express.html",
-    "intent/intent.html",
-    "intent/how-do-we-code-intent.html",
-
-    "commands/commands.html",
-    "commands/examples/create-an-invoice.html",
-    "commands/examples/give-me-a-beer.html",
-    "commands/examples/make-me-a-sandwich.html",
-    "commands/commands-express-intent.html",
-    "commands/commands-are-simple.html",
-    "commands/commands-are-value-objects.html",
-
-    "command-bus/who-executes-commands.html",
-    "command-bus/command-bus.html",
-    "command-bus/command-bus-executes.html",
-
-    "read-model/who-gives-us-the-data.html",
-    "read-model/read-model.html",
-    "read-model/read-model-read.html",
-
-    "cqrs/cqrs.html",
-    "cqrs/command-query-responsibility-segregation.html",
-    "cqrs/example/contract-controller.html",
-    "cqrs/example/contract-command-handler.html",
-
-    "more/cqrs-has-more.html",
-    "more/i-like-the-explicit-intent.html",
-
-    "basic-cqrs/intro.html",
-    "basic-cqrs/why-cqrs.html",
-    "basic-cqrs/workflow/what-we-need.html",
-    "basic-cqrs/workflow/command.html",
-    "basic-cqrs/workflow/example/command.html",
-    "basic-cqrs/workflow/note/command.html",
-    "basic-cqrs/workflow/command-handle.html",
-    "basic-cqrs/workflow/example/command-handle.html",
-    "basic-cqrs/workflow/note/command-handle.html",
-    "basic-cqrs/workflow/commandbus.html",
-    "basic-cqrs/workflow/example/commandbus.html",
-    "basic-cqrs/workflow/note/commandbus.html",
-    "basic-cqrs/crud-vs-command.html",
-
-    "shittycqrs/intro.html",
-    "shittycqrs/show-me-the-code.html",
-
+    "doctrine/beginer.html",
     "outro/thanks.html"
 ]
