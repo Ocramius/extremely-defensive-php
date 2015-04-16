@@ -1,0 +1,11 @@
+<pre><code data-trim>
+$commandHandler = function (TerminateContract $terminate) use (...) {
+    $contract = $contracts->find($terminate->contractId);
+
+    $contract->terminate();
+
+    $save($contract);
+
+    $commandBus(new SendCancellationNotifications($contract->id));
+};
+</code></pre>

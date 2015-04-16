@@ -1,0 +1,11 @@
+<pre><code data-trim>
+class ContractController {
+    public function terminateContractAction()
+    {
+        // just do it!
+        $commandBus(new TerminateContract($data['id']));
+
+        return $renderTemplate($contracts->findById($contractId));
+    }
+}
+</code></pre>

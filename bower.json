@@ -1,0 +1,7 @@
+{
+  "name": "ShittyCQRS explained",
+  "version": "1.0.0",
+  "dependencies": {
+    "reveal.js": "~2.6.1"
+  }
+}
