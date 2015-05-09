@@ -2,7 +2,7 @@
     "introduction/hello.html",
     "introduction/i-am-marco.html",
     {
-        "background": "assets/img/ocramius.gif",
+        "background": null,
         "path":       "introduction/i-am-ocramius.html"
     },
     "introduction/ocramius.html",
