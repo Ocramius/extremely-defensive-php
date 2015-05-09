@@ -110,3 +110,8 @@ code {
 .reveal pre code {
   max-height: 600px;
 }
+
+section[data-background] [data-background], section[data-background] [data-background-image] {
+  /* hide any elements that actually represent a background */
+  display: none;
+}
