@@ -98,16 +98,23 @@ module.exports = (grunt) ->
         'Build index.html from templates/_index.html and slides/list.json.',
         ->
             indexTemplate = grunt.file.read 'templates/_index.html'
-            sectionTemplate = grunt.file.read 'templates/_section.html'
-            slides = grunt.file.readJSON 'slides/list.json'
+            sectionTemplate = grunt.file.read 'templates/_slide.html'
+            # coffeescript is a brain dead language anyway:
+            typeIsArray = Array.isArray || (value) -> return {}.toString.call(value) is '[object Array]'
+            importSlides = (slides) ->
+                if typeIsArray(slides)
+                    (importSlides(slide) for slide in slides)
+                else
+                    grunt.file.read('slides/' + slides)
 
             html = grunt.template.process indexTemplate, data:
                 slides:
-                    slides
+                    importSlides(grunt.file.readJSON 'slides/list.json')
                 section: (slide) ->
                     grunt.template.process sectionTemplate, data:
                         slide:
                             slide
+
             grunt.file.write 'index.html', html
 
     grunt.registerTask 'test',
