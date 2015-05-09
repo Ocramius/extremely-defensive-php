@@ -13,8 +13,8 @@ module.exports = (grunt) ->
                     'assets/*'
                     'assets/**/*'
                     'slides/*'
-                    'slides/**/*'
-                    'slides/**/**/*'
+                    'slides/*/*'
+                    'slides/*/*/*'
                     'js/*.js'
                     'css/*.css'
                 ]
