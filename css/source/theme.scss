@@ -6,6 +6,7 @@
 // This file has been copied over from
 // ../../bower_components/reveal.js/css/theme/source/default.scss
 // Default mixins and settings -----------------
+@import "../../bower_components/reveal.js/css/reveal";
 @import "../../bower_components/reveal.js/css/theme/template/mixins";
 @import "../../bower_components/reveal.js/css/theme/template/settings";
 //@import "sky";
@@ -15,8 +16,8 @@
 // Include theme-specific fonts ----------------
 @font-face {
   font-family: 'League Gothic';
-  src: url('../../lib/font/league_gothic-webfont.eot');
-  src: url('../../lib/font/league_gothic-webfont.eot?#iefix') format('embedded-opentype'), url('../../lib/font/league_gothic-webfont.woff') format('woff'), url('../../lib/font/league_gothic-webfont.ttf') format('truetype'), url('../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
+  src: url('/bower_components/reveal.js/lib/font/league_gothic-webfont.eot');
+  src: url('/bower_components/reveal.js/lib/font/league_gothic-webfont.eot?#iefix') format('embedded-opentype'), url('../../lib/font/league_gothic-webfont.woff') format('woff'), url('../../lib/font/league_gothic-webfont.ttf') format('truetype'), url('../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
 
   font-weight: normal;
   font-style: normal;
