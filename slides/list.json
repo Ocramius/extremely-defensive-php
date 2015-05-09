@@ -1,6 +1,10 @@
 [
     "introduction/intro.html",
     "introduction/i-am-marco.html",
+    {
+        "background": "assets/img/ocramius.gif",
+        "path":       "introduction/i-am-ocramius.html"
+    },
     "introduction/i-work-for.html",
 
     "doctrine/beginer.html",
