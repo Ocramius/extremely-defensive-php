@@ -19,8 +19,7 @@ module.exports = (grunt) ->
 
             index:
                 files: [
-                    'templates/_index.html'
-                    'templates/_section.html'
+                    'templates/*'
                     'slides/list.json'
                     'slides/**.html'
                 ]

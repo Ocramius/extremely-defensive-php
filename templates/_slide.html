@@ -1,4 +1,4 @@
-<% if (!_.isString(slide) && !_.isArray(slide) && _.isObject(slide)) { %>
+<% if (!_.isString(contents)) { %>
     <section <%= _.map(slide.attr, function (val, attr) {return attr + '="' + val + '"'}).join(' ')%> <% if (_.isString(slide.filename)) { %>data-<% if (slide.filename.indexOf('.html') !== -1) { %>html<% } else { %>markdown<% }%>="slides/<%= slide.filename %>"<% } %>></section>
 <% } %><% if (_.isString(contents)) { %>
     <section<% if (background) { %> data-background="<%= background %>" <% } %>><%= contents %></section>
