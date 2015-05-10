@@ -44,6 +44,7 @@
     "doctrine-2-orm-best-practices/entity-practices/entities-first/the-database-is-just-saving-things.html",
     "doctrine-2-orm-best-practices/entity-practices/entities-first/design-entities-first.html",
     "doctrine-2-orm-best-practices/entity-practices/entities-first/define-the-db-after-you-know-how-to-use-it.html",
+    "doctrine-2-orm-best-practices/entity-practices/entities-first/define-mappings-after-the-entities.html",
 
     "doctrine-2-orm-best-practices/entity-practices/entity-api/designing-entities.html",
     "doctrine-2-orm-best-practices/entity-practices/entity-api/typed-array-example.html",
