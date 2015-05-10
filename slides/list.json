@@ -58,6 +58,12 @@
     "doctrine-2-orm-best-practices/entity-practices/entity-rules/law-of-demeter-fixed.html",
     "doctrine-2-orm-best-practices/entity-practices/entity-rules/law-of-demeter-advantages.html",
 
+    "doctrine-2-orm-best-practices/entity-practices/entity-validity/entity-validity.html",
+    {
+        "background": "assets/img/orly.jpg",
+        "path":       "doctrine-2-orm-best-practices/entity-practices/entity-validity/there-is-no-validity.html"
+    },
+
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/structure.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/architecture.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/hot-spots.html",
