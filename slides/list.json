@@ -1,11 +1,11 @@
 [
     "introduction/hello.html",
     "introduction/i-am-marco.html",
+    "introduction/ocramius.html",
     {
         "background": null,
         "path":       "introduction/i-am-ocramius.html"
     },
-    "introduction/ocramius.html",
     "introduction/i-work-for-roave.html",
     "introduction/i-work-on-zend-framework-2.html",
     "introduction/i-work-on-doctrine.html",
