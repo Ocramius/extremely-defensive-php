@@ -100,6 +100,12 @@
     "doctrine-2-orm-best-practices/repository-practices/repositories-as-services/avoid-get-repository.html",
     "doctrine-2-orm-best-practices/repository-practices/repositories-as-services/inject-repositories-instead.html",
 
+    "doctrine-2-orm-best-practices/transactions/two-phase-commits/avoid-two-phase-commits.html",
+    "doctrine-2-orm-best-practices/transactions/two-phase-commits/keep-transactions-unrelated.html",
+
+    "doctrine-2-orm-best-practices/transactions/different-services-different-transactions/different-boundaries-different-transactions.html",
+    "doctrine-2-orm-best-practices/transactions/different-services-different-transactions/communicate-between-boundaries-via-identifiers.html",
+
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/structure.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/architecture.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/hot-spots.html",
