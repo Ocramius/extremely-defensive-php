@@ -127,6 +127,7 @@
     "doctrine-2-orm-best-practices/transactions/different-services-different-transactions/communicate-between-boundaries-via-identifiers.html",
 
     "doctrine-2-orm-best-practices/normalization/avoid-over-normalization/keep-normalization-freaks-under-control.html",
+    "doctrine-2-orm-best-practices/normalization/avoid-over-normalization/you-may-need-to-gag-your-dba.html",
 
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/structure.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/architecture.html",
