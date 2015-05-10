@@ -14,11 +14,16 @@
     "doctrine-2-orm-best-practices/the-project/looking-for-contributors.html",
 
     "doctrine-2-orm-best-practices/what-is-doctrine-orm/doctrine-orm.html",
+
     "doctrine-2-orm-best-practices/what-is-doctrine-orm/who-for/who.html",
     "doctrine-2-orm-best-practices/what-is-doctrine-orm/who-for/oltp.html",
     "doctrine-2-orm-best-practices/what-is-doctrine-orm/who-for/ddd.html",
     "doctrine-2-orm-best-practices/what-is-doctrine-orm/who-for/fast-prototyping.html",
     "doctrine-2-orm-best-practices/what-is-doctrine-orm/who-for/oo-first.html",
+
+    "doctrine-2-orm-best-practices/what-is-doctrine-orm/who-not-for/who-not.html",
+    "doctrine-2-orm-best-practices/what-is-doctrine-orm/who-not-for/dynamic-schema.html",
+    "doctrine-2-orm-best-practices/what-is-doctrine-orm/who-not-for/reporting-applications.html",
 
     "doctrine-2-orm-best-practices/the-talk.html",
 
