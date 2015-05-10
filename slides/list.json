@@ -26,6 +26,8 @@
     },
     "doctrine-2-orm-best-practices/know-your-tool/read-the-docs.html",
 
+    "doctrine-2-orm-best-practices/what-is-doctrine-orm/use-when-appropriate.html",
+
     "doctrine-2-orm-best-practices/what-is-doctrine-orm/who-for/who.html",
     "doctrine-2-orm-best-practices/what-is-doctrine-orm/who-for/oltp.html",
     "doctrine-2-orm-best-practices/what-is-doctrine-orm/who-for/ddd.html",
