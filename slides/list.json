@@ -19,12 +19,12 @@
 
     "doctrine-2-orm-best-practices/know-your-tool/know-your-enemy.html",
     "doctrine-2-orm-best-practices/know-your-tool/know-your-tools.html",
+    "doctrine-2-orm-best-practices/know-your-tool/read-the-docs.html",
     "doctrine-2-orm-best-practices/know-your-tool/knowledge-is-power.html",
     {
         "background": "assets/img/power-is-power.gif",
         "path":       "doctrine-2-orm-best-practices/know-your-tool/power-is-power.html"
     },
-    "doctrine-2-orm-best-practices/know-your-tool/read-the-docs.html",
 
     "doctrine-2-orm-best-practices/what-is-doctrine-orm/use-when-appropriate.html",
 
