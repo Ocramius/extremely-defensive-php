@@ -68,6 +68,7 @@
         "path":       null
     },
     "doctrine-2-orm-best-practices/entity-practices/entity-validity/entities-are-always-valid.html",
+    "doctrine-2-orm-best-practices/entity-practices/entity-validity/if-you-have-invalid-state-design-separate-dtos.html",
 
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/structure.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/architecture.html",
