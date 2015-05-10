@@ -10,9 +10,10 @@
     "introduction/i-work-on-zend-framework-2.html",
     "introduction/i-work-on-doctrine.html",
 
-    "doctrine-2-orm-best-practices/the-talk.html",
-
     "doctrine-2-orm-best-practices/the-project/doctrine-orm.html",
+    "doctrine-2-orm-best-practices/the-project/doctrine-project.html",
+
+    "doctrine-2-orm-best-practices/the-talk.html",
 
     "doctrine-2-orm-best-practices/know-your-tool/know-your-enemy.html",
     "doctrine-2-orm-best-practices/know-your-tool/know-your-tools.html",
