@@ -86,6 +86,10 @@
     "doctrine-2-orm-best-practices/entity-practices/uuids/use-uuids-instead.html",
     "doctrine-2-orm-best-practices/entity-practices/uuids/auto-increment-confused-with-timestamp-sorting.html",
 
+    "doctrine-2-orm-best-practices/entity-practices/avoid-derived-pk/avoid-derived-primary-keys.html",
+
+    "doctrine-2-orm-best-practices/entity-practices/avoid-composite-pk/avoid-composite-primary-keys.html",
+
     "doctrine-2-orm-best-practices/mapping-rules/mapping-driver/mapping-driver-choice.html",
     "doctrine-2-orm-best-practices/mapping-rules/mapping-driver/use-annotations-in-private-packages.html",
     "doctrine-2-orm-best-practices/mapping-rules/mapping-driver/use-xml-mappings-in-public-packages.html",
