@@ -1,0 +1,21 @@
+<pre><code data-trim>
+class UserController
+{
+    // ...
+    public function registerAction()
+    {
+        $this->userForm->bind(new User());
+    }
+}
+</code></pre>
+
+<pre><code data-trim>
+class UserController
+{
+    // ...
+    public function registerAction()
+    {
+        $this->em->persist(User::fromFormData($this->form));
+    }
+}
+</code></pre>

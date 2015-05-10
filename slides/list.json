@@ -70,6 +70,12 @@
     "doctrine-2-orm-best-practices/entity-practices/entity-validity/entities-are-always-valid.html",
     "doctrine-2-orm-best-practices/entity-practices/entity-validity/if-you-have-invalid-state-design-separate-dtos.html",
     "doctrine-2-orm-best-practices/entity-practices/entity-validity/validity-after-construct.html",
+    "doctrine-2-orm-best-practices/entity-practices/entity-validity/no-setters.html",
+
+    "doctrine-2-orm-best-practices/entity-practices/no-app-layer-coupling/avoid-coupling-with-the-app-layer.html",
+    "doctrine-2-orm-best-practices/entity-practices/no-app-layer-coupling/app-layer-coupling-example.html",
+    "doctrine-2-orm-best-practices/entity-practices/no-app-layer-coupling/form-components-break-validity.html",
+    "doctrine-2-orm-best-practices/entity-practices/no-app-layer-coupling/both-symfony-and-zf-are-terrible-at-this.html",
 
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/structure.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/architecture.html",

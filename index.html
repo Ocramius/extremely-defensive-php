@@ -9,8 +9,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-        <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.css">
-        <link rel="stylesheet" href="bower_components/reveal.js/css/theme/black.css" id="theme">
+        <link rel="stylesheet" href="css/theme.css" id="theme">
         <link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css">
 
         <!-- Printing and PDF exports -->
@@ -28,56 +27,484 @@
             <div class="slides">
                 
                     
-                        
-    <section><h1>Hi!</h1></section>
-
+                        <section><h1>Hi!</h1></section>
 
                     
                     
                 
                     
-                        
-    <section><h1>I'm Marco!</h1>
+                        <section><h1>I'm Marco!</h1>
 </section>
 
+                    
+                    
+                
+                    
+                        <section><img src="assets/img/ocramius.gif" width="40%"/></section>
 
                     
                     
                 
                     
-                        
-    <section data-background="assets/img/ocramius.gif" ><img src="assets/img/ocramius.gif" data-background-image=""/></section>
-
-
-                    
-                    
-                
-                    
-                        
-    <section><img src="assets/img/roave.svg" height="15%"/>
-<img src="assets/img/zf-logo.svg" height="15%"/>
-<img src="assets/img/doctrine.svg" height="15%"/>
+                        <section><h1><a href="https://twitter.com/Ocramius" target="_blank">Ocramius</a></h1>
 </section>
 
+                    
+                    
+                
+                    
+                        <section><img src="assets/img/roave.svg"/>
+</section>
 
                     
                     
                 
                     
-                        
-    <section><h1>Doctrine best pratices</h1>
-
+                        <section><img src="assets/img/zf-logo.svg"/>
 </section>
-
 
                     
                     
                 
                     
-                        
-    <section><h2>Thanks!</h2>
+                        <section><img src="assets/img/doctrine.svg"/>
 </section>
 
+                    
+                    
+                
+                    
+                        <section><h2 class="doctrine-color">Doctrine Project</h2>
+
+<p>
+    A group of persistence-oriented libraries for <span class="php-color">PHP</span>
+</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>We are looking for contributors!</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Doctrine <abbr title="Object Relational Mapper" class="doctrine-color">ORM</abbr></h2>
+
+<p>
+    A
+    <a href="https://jcp.org/aboutJava/communityprocess/final/jsr317/index.html" target="_blank">
+        JSR-317
+    </a>
+    /
+    <a href="http://hibernate.org/" target="_blank">
+        Hibernate
+    </a>
+    inspired <span class="doctrine-color">Object Relational Mapper</span>
+</p></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Doctrine 2 ORM Best Practices</h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Know your <strong>enemy</strong></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Know your <strike>enemy</strike> <strong>tools</strong></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="doctrine-color">Knowledge</span> is <span class="zf-color">Power</span></h2></section>
+
+                    
+                    
+                
+                    
+                        <section data-background="assets/img/power-is-power.gif" ></section>
+
+                    
+                    
+                
+                    
+                        <section><img
+    src="assets/img/read-the-docs.svg"
+    alt="Read the Documentation"
+    style="width: 50%"
+/></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Know when an <span class="doctrine-color">ORM</span> is <span class="php-color">appropriate</span></h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="php-color">Who</span> is <span class="doctrine-color">Doctrine ORM</span> for?</h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><abbr title="OnLine Transaction Processing" class="zf-color">OLTP</abbr></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><abbr title="Domain Driven Development" class="php-color">DDD</abbr></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="doctrine-color">Fast prototyping</span></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><abbr title="Object Oriented" class="php-color">OO</abbr>-first</h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="php-color">Who</span> is <span class="doctrine-color">Doctrine ORM</span> <strong>NOT</strong> for?</h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Dynamic data structures</h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Reporting</h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h1><span class="zf-color">Designing</span> <span class="doctrine-color">Entities</span></h1></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="doctrine-color">Entities</span> represent what you <strong>want</strong></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>The <span class="php-color">Database</span> is just <strong>saving</strong> things</h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Design <span class="doctrine-color">entities</span> <strong>first</strong></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Define the <span class="php-color">Database</span> once you <strong>know</strong> what to do with it</h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Define <span class="doctrine-color">Mappings</span> <strong>after</strong> the <span class="doctrine-color">Entities</span></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h1><span class="zf-color">Designing</span> <span class="doctrine-color">Entities</span></h1></section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code data-trim>
+class User
+{
+    private $username;
+    private $password;
+
+    public function getUsername() {
+        return $this->username;
+    }
+
+    public function setUsername($username) {
+        $this->username = $username;
+    }
+
+    public function getPassword() {
+        return $this->password;
+    }
+
+    public function setPassword($password) {
+        $this->password = $password;
+    }
+}
+</code></pre></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="doctrine-color">Entities</span> are <strong>NOT</strong> <span class="php-color">typed arrays</span></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="doctrine-color">Entities</span> have <span class="zf-color">Behavior</span></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code data-trim>
+class User
+{
+    private $banned;
+    private $username;
+    private $passwordHash;
+
+    public function toNickname()
+    {
+        return $this->username;
+    }
+
+    public function authenticate($pass, callable $hashCheck) {
+        return $hashCheck($pass, $this->passwordHash)
+            && ! $this->hasActiveBans();
+    }
+
+    public function changePassword($pass, callable $hashingAlgo) {
+        $this->passwordHash = $hashingAlgo($pass);
+    }
+}
+</code></pre></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="php-color">No behavior</span> = no need for the <span class="doctrine-color">ORM</span></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Respect the <abbr title="Law of Demeter" class="zf-color">LOD</abbr></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code data-trim>
+class User
+{
+    // ...
+    public function hasAccessTo($resource)
+    {
+        return (bool) array_filter(
+            $this->role->getAccessLevels(),
+            function (AccessLevel $acl) use ($resource) {
+                return $acl->canAccess($resource)
+            }
+        );
+    }
+}
+</code></pre></section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code data-trim>
+class User
+{
+    // ...
+    public function hasAccessTo($resource)
+    {
+        return $this->role->allowsAccessTo($resource);
+    }
+}
+</code></pre></section>
+
+                    
+                    
+                
+                    
+                        <section><p class="fragment grow">More expressive</p>
+<p class="fragment grow">Easier to test</p>
+<p class="fragment grow">Less coupling</p>
+<p class="fragment grow">More flexibility</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="doctrine-color">Entity</span> <span class="php-color">Validity</span></h2></section>
+
+                    
+                    
+                
+                    
+                        <section data-background="assets/img/orly.jpg" ></section>
+
+                    
+                    
+                
+                    
+                        <section data-background="assets/img/there-is-no-dana-there-is-only-zuul.png" ></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="doctrine-color">Entities</span> should <strong>always</strong> be <span class="zf-color">valid</span></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <span class="php-color">Invalid state</span>
+    should be in a <strong>different object</strong>
+</h2>
+
+<p class="fragment">(You may need a <abbr title="Data Transfer Object" class="zf-color">DTO</abbr>)</p>
+<p class="fragment">(Also applies to <span class="php-color">Temporary State</span>)</p></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    Stay <span class="zf-color">valid</span> after <code>__construct</code>
+</h2>
+
+<p class="fragment">(Regardless of the <abbr title="Data Transfer Object" class="php-color">DB</abbr>)</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <strong>Avoid</strong> <span class="php-color">setters</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <strong>Avoid </strong> coupling with the <span class="php-color">Application Layer</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code data-trim>
+class UserController
+{
+    // ...
+    public function registerAction()
+    {
+        $this->userForm->bind(new User());
+    }
+}
+</code></pre>
+
+<pre><code data-trim>
+class UserController
+{
+    // ...
+    public function registerAction()
+    {
+        $this->em->persist(User::fromFormData($this->form));
+    }
+}
+</code></pre></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <span class="php-color">Form components</span> break <span class="doctrine-color">Entity</span> <span class="zf-color">Validity</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    Both <span class="php-color">Symfony\Form</span> and <span class="zf-color">Zend\Form</span> are terrible
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Know how the <span class="doctrine-color">ORM</span> is <span class="zf-color">structured</span></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><p class="fragment grow">EntityManager</p>
+<p class="fragment grow">UnitOfWork</p>
+<p class="fragment grow">Metadata Drivers</p>
+<p class="fragment grow">DQL</p>
+<p class="fragment grow">Repositories</p>
+<p class="fragment grow">Second Level Cache</p></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="doctrine-color">Entities</span> should <strong>always</strong> be <span class="zf-color">valid</span></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Thanks!</h2>
+</section>
 
                     
                     
