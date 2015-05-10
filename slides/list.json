@@ -38,7 +38,7 @@
     "doctrine-2-orm-best-practices/what-is-doctrine-orm/who-not-for/dynamic-schema.html",
     "doctrine-2-orm-best-practices/what-is-doctrine-orm/who-not-for/reporting-applications.html",
 
-    "doctrine-2-orm-best-practices/entity-practices/designing-entities.html",
+    "doctrine-2-orm-best-practices/entity-practices/where-to-start.html",
 
     "doctrine-2-orm-best-practices/entity-practices/entities-first/entities-are-what-you-want.html",
     "doctrine-2-orm-best-practices/entity-practices/entities-first/the-database-is-just-saving-things.html",
