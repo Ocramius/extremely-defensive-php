@@ -110,6 +110,9 @@
     "doctrine-2-orm-best-practices/mapping-rules/eager-loading/eager-loading-is-useless.html",
     "doctrine-2-orm-best-practices/mapping-rules/eager-loading/extra-lazy-usually-indicates-excessive-mapping.html",
 
+    "doctrine-2-orm-best-practices/mapping-rules/avoid-bidirectional/avoid-bidirectional-mapping.html",
+    "doctrine-2-orm-best-practices/mapping-rules/avoid-bidirectional/bi-directional-associations-are-overhead.html",
+
     "doctrine-2-orm-best-practices/repository-practices/custom-repositories/custom-repositories.html",
     "doctrine-2-orm-best-practices/repository-practices/custom-repositories/custom-repository-example.html",
 
