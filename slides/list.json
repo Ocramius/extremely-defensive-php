@@ -77,6 +77,11 @@
     "doctrine-2-orm-best-practices/entity-practices/no-app-layer-coupling/form-components-break-validity.html",
     "doctrine-2-orm-best-practices/entity-practices/no-app-layer-coupling/both-symfony-and-zf-are-terrible-at-this.html",
 
+    "doctrine-2-orm-best-practices/entity-practices/no-lifecycle-callbacks/avoid-lifecycle-callbacks.html",
+    "doctrine-2-orm-best-practices/entity-practices/no-lifecycle-callbacks/life-cycle-callbacks-are-a-hack.html",
+    "doctrine-2-orm-best-practices/entity-practices/no-lifecycle-callbacks/life-cycle-callbacks-are-serialize-unserialize.html",
+    "doctrine-2-orm-best-practices/entity-practices/no-lifecycle-callbacks/dont-use-lifecycle-callbacks-for-business-logic.html",
+
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/structure.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/architecture.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/hot-spots.html",
