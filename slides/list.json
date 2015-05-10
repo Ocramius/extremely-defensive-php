@@ -58,6 +58,11 @@
     "doctrine-2-orm-best-practices/entity-practices/entity-rules/law-of-demeter-fixed.html",
     "doctrine-2-orm-best-practices/entity-practices/entity-rules/law-of-demeter-advantages.html",
 
+    "doctrine-2-orm-best-practices/entity-practices/disallow-collection-access/disallow-external-collection-access.html",
+    "doctrine-2-orm-best-practices/entity-practices/disallow-collection-access/access-example.html",
+    "doctrine-2-orm-best-practices/entity-practices/disallow-collection-access/keep-collections-hidden-in-your-entities.html",
+    "doctrine-2-orm-best-practices/entity-practices/disallow-collection-access/disallowed-access-example.html",
+
     "doctrine-2-orm-best-practices/entity-practices/entity-validity/entity-validity.html",
     {
         "background": "assets/img/orly.jpg",

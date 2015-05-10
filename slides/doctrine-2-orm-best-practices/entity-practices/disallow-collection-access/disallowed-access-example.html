@@ -1,0 +1,19 @@
+<pre><code data-trim>
+class User
+{
+    private $bans;
+
+    public function ban() {
+        $this->bans[] = new Ban($this);
+    }
+}
+</code></pre>
+
+<pre><code data-trim>
+public function banUser($userId)
+{
+    $user = $this->repository->find($userId);
+
+    $user->ban();
+}
+</code></pre>
