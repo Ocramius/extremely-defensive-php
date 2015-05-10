@@ -146,8 +146,8 @@
 
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/performance.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/structure.html",
-    "doctrine-2-orm-best-practices/how-is-the-orm-structured/architecture.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/hot-spots.html",
+    "doctrine-2-orm-best-practices/how-is-the-orm-structured/profile-a-lot.html",
 
     "outro/thanks.html"
 ]
