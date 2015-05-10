@@ -129,6 +129,10 @@
     "doctrine-2-orm-best-practices/repository-practices/repositories-as-services/inject-repositories-instead.html",
 
     "doctrine-2-orm-best-practices/repository-practices/separate-get-and-find/separate-get-and-find.html",
+    "doctrine-2-orm-best-practices/repository-practices/separate-get-and-find/find-can-return-nothing.html",
+    "doctrine-2-orm-best-practices/repository-practices/separate-get-and-find/get-cannot-return-null.html",
+    "doctrine-2-orm-best-practices/repository-practices/separate-get-and-find/get-example.html",
+    "doctrine-2-orm-best-practices/repository-practices/separate-get-and-find/get-simplifies-error-checking-logic.html",
 
     "doctrine-2-orm-best-practices/transactions/two-phase-commits/avoid-two-phase-commits.html",
     "doctrine-2-orm-best-practices/transactions/two-phase-commits/keep-transactions-unrelated.html",
