@@ -38,6 +38,10 @@
     "doctrine-2-orm-best-practices/what-is-doctrine-orm/who-not-for/dynamic-schema.html",
     "doctrine-2-orm-best-practices/what-is-doctrine-orm/who-not-for/reporting-applications.html",
 
+    "doctrine-2-orm-best-practices/entity-practices/entity-api/designing-entities.html",
+    "doctrine-2-orm-best-practices/entity-practices/entity-api/typed-array-example.html",
+    "doctrine-2-orm-best-practices/entity-practices/entity-api/entities-are-not-typed-arrays.html",
+
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/structure.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/architecture.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/hot-spots.html",
