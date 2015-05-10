@@ -43,6 +43,7 @@
     "doctrine-2-orm-best-practices/entity-practices/entity-api/entities-are-not-typed-arrays.html",
     "doctrine-2-orm-best-practices/entity-practices/entity-api/entities-have-behavior.html",
     "doctrine-2-orm-best-practices/entity-practices/entity-api/behavior-example.html",
+    "doctrine-2-orm-best-practices/entity-practices/entity-api/no-behavior-no-orm.html",
 
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/structure.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/architecture.html",
