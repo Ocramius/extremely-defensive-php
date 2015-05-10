@@ -1,0 +1,10 @@
+<pre><code data-trim>
+class User
+{
+    // ...
+    public function hasAccessTo($resource)
+    {
+        return $this->role->allowsAccessTo($resource);
+    }
+}
+</code></pre>

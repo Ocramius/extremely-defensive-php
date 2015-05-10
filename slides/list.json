@@ -53,6 +53,11 @@
     "doctrine-2-orm-best-practices/entity-practices/entity-api/behavior-example.html",
     "doctrine-2-orm-best-practices/entity-practices/entity-api/no-behavior-no-orm.html",
 
+    "doctrine-2-orm-best-practices/entity-practices/entity-rules/respect-demeter.html",
+    "doctrine-2-orm-best-practices/entity-practices/entity-rules/law-of-demeter-violation.html",
+    "doctrine-2-orm-best-practices/entity-practices/entity-rules/law-of-demeter-fixed.html",
+    "doctrine-2-orm-best-practices/entity-practices/entity-rules/law-of-demeter-advantages.html",
+
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/structure.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/architecture.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/hot-spots.html",
