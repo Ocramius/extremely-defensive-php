@@ -82,6 +82,9 @@
     "doctrine-2-orm-best-practices/entity-practices/no-lifecycle-callbacks/life-cycle-callbacks-are-serialize-unserialize.html",
     "doctrine-2-orm-best-practices/entity-practices/no-lifecycle-callbacks/dont-use-lifecycle-callbacks-for-business-logic.html",
 
+    "doctrine-2-orm-best-practices/entity-practices/uuids/avoid-db-generated-identifiers.html",
+    "doctrine-2-orm-best-practices/entity-practices/uuids/use-uuids-instead.html",
+
     "doctrine-2-orm-best-practices/mapping-rules/mapping-driver/mapping-driver-choice.html",
     "doctrine-2-orm-best-practices/mapping-rules/mapping-driver/use-annotations-in-private-packages.html",
     "doctrine-2-orm-best-practices/mapping-rules/mapping-driver/use-xml-mappings-in-public-packages.html",
