@@ -106,6 +106,8 @@
     "doctrine-2-orm-best-practices/transactions/different-services-different-transactions/different-boundaries-different-transactions.html",
     "doctrine-2-orm-best-practices/transactions/different-services-different-transactions/communicate-between-boundaries-via-identifiers.html",
 
+    "doctrine-2-orm-best-practices/normalization/avoid-over-normalization/keep-normalization-freaks-under-control.html",
+
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/structure.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/architecture.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/hot-spots.html",
