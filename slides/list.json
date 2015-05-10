@@ -12,5 +12,8 @@
 
     "doctrine-2-orm-best-practices/the-talk.html",
 
+    "doctrine-2-orm-best-practices/know-your-tool/know-your-enemy.html",
+    "doctrine-2-orm-best-practices/know-your-tool/know-your-tools.html",
+
     "outro/thanks.html"
 ]
