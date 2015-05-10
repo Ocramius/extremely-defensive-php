@@ -86,6 +86,10 @@
     "doctrine-2-orm-best-practices/mapping-rules/mapping-driver/use-annotations-in-private-packages.html",
     "doctrine-2-orm-best-practices/mapping-rules/mapping-driver/use-xml-mappings-in-public-packages.html",
 
+    "doctrine-2-orm-best-practices/mapping-rules/eager-loading/lazy-or-eager.html",
+    "doctrine-2-orm-best-practices/mapping-rules/eager-loading/eager-loading-is-useless.html",
+    "doctrine-2-orm-best-practices/mapping-rules/eager-loading/extra-lazy-usually-indicates-excessive-mapping.html",
+
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/structure.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/architecture.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/hot-spots.html",
