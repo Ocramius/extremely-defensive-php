@@ -61,8 +61,13 @@
     "doctrine-2-orm-best-practices/entity-practices/entity-validity/entity-validity.html",
     {
         "background": "assets/img/orly.jpg",
-        "path":       "doctrine-2-orm-best-practices/entity-practices/entity-validity/there-is-no-validity.html"
+        "path":       null
     },
+    {
+        "background": "assets/img/there-is-no-dana-there-is-only-zuul.png",
+        "path":       null
+    },
+    "doctrine-2-orm-best-practices/entity-practices/entity-validity/entities-are-always-valid.html",
 
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/structure.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/architecture.html",
