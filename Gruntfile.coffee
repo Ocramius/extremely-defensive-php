@@ -13,9 +13,8 @@ module.exports = (grunt) ->
                     'assets/*'
                     'assets/**/*'
                     'slides/*'
-                    'slides/*/*'
-                    'slides/*/*/*'
-                    'slides/*/*/*/*'
+                    'slides/**/.html'
+                    'slides/**/.md'
                     'js/*.js'
                     'css/*.css'
                 ]
@@ -24,7 +23,8 @@ module.exports = (grunt) ->
                 files: [
                     'templates/*'
                     'slides/list.json'
-                    'slides/**.html'
+                    'slides/*'
+                    'slides/**/*.html'
                 ]
                 tasks: ['buildIndex']
 
