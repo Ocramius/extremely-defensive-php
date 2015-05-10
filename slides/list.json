@@ -96,6 +96,8 @@
     "doctrine-2-orm-best-practices/repository-practices/query-functions/query-functions.html",
     "doctrine-2-orm-best-practices/repository-practices/query-functions/query-function-example.html",
 
+    "doctrine-2-orm-best-practices/repository-practices/repositories-as-services/repositories-are-services.html",
+
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/structure.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/architecture.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/hot-spots.html",
