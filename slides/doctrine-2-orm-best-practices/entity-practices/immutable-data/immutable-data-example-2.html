@@ -1,0 +1,14 @@
+<pre><code data-trim>
+class MessageRead
+{
+    private $user;
+    private $message;
+
+    public function __construct(User $user, Message $message)
+    {
+        $this->id      = Uuid::uuidV4();
+        $this->user    = $user;
+        $this->message = $user;
+    }
+}
+</code></pre>
