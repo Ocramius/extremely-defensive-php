@@ -90,6 +90,9 @@
     "doctrine-2-orm-best-practices/mapping-rules/eager-loading/eager-loading-is-useless.html",
     "doctrine-2-orm-best-practices/mapping-rules/eager-loading/extra-lazy-usually-indicates-excessive-mapping.html",
 
+    "doctrine-2-orm-best-practices/repository-practices/custom-repositories/custom-repositories.html",
+    "doctrine-2-orm-best-practices/repository-practices/custom-repositories/custom-repository-example.html",
+
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/structure.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/architecture.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/hot-spots.html",
