@@ -107,9 +107,13 @@ module.exports = (grunt) ->
                 else if "string" == grunt.util.kindOf(slide)
                     contents:   grunt.file.read('slides/' + slide)
                     background: null
-                else
+                else if slide.path
                     contents:   grunt.file.read('slides/' + slide.path)
                     background: slide.background
+                else
+                    contents:   null
+                    background: slide.background
+
 
             html = grunt.template.process indexTemplate, data:
                 slides:
