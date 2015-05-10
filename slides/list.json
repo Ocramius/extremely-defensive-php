@@ -38,5 +38,8 @@
     "doctrine-2-orm-best-practices/what-is-doctrine-orm/who-not-for/dynamic-schema.html",
     "doctrine-2-orm-best-practices/what-is-doctrine-orm/who-not-for/reporting-applications.html",
 
+    "doctrine-2-orm-best-practices/how-is-the-orm-structured/structure.html",
+    "doctrine-2-orm-best-practices/how-is-the-orm-structured/architecture.html",
+
     "outro/thanks.html"
 ]
