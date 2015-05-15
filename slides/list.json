@@ -107,6 +107,7 @@
     "doctrine-2-orm-best-practices/entity-practices/avoid-soft-deletes/soft-deletes-are-a-broken-concept.html",
     "doctrine-2-orm-best-practices/entity-practices/avoid-soft-deletes/soft-deletes-are-from-another-era.html",
     "doctrine-2-orm-best-practices/entity-practices/avoid-soft-deletes/soft-deletes-are-against-immutability.html",
+    "doctrine-2-orm-best-practices/entity-practices/avoid-soft-deletes/soft-deletes-break-data-integrity.html",
     "doctrine-2-orm-best-practices/entity-practices/avoid-soft-deletes/soft-deletes-can-be-replaced.html",
 
     "doctrine-2-orm-best-practices/mapping-rules/mapping-driver/mapping-driver-choice.html",
