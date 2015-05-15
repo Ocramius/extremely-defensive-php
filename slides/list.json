@@ -150,5 +150,10 @@
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/hot-spots.html",
     "doctrine-2-orm-best-practices/how-is-the-orm-structured/profile-a-lot.html",
 
+    "doctrine-2-orm-best-practices/recap/recap.html",
+    "doctrine-2-orm-best-practices/recap/domain-first.html",
+    "doctrine-2-orm-best-practices/recap/do-not-normalize-if-not-needed-by-the-domain.html",
+    "doctrine-2-orm-best-practices/recap/consider-different-dbs-for-transactional-data.html",
+
     "outro/thanks.html"
 ]
