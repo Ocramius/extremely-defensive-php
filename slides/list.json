@@ -90,6 +90,7 @@
 
     "doctrine-2-orm-best-practices/entity-practices/uuids/avoid-db-generated-identifiers.html",
     "doctrine-2-orm-best-practices/entity-practices/uuids/use-uuids-instead.html",
+    "doctrine-2-orm-best-practices/entity-practices/uuids/how-do-we-use-uuids.html",
     "doctrine-2-orm-best-practices/entity-practices/uuids/auto-increment-confused-with-timestamp-sorting.html",
 
     "doctrine-2-orm-best-practices/entity-practices/avoid-derived-pk/avoid-derived-primary-keys.html",
