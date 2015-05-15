@@ -33,14 +33,8 @@
                     
                 
                     
-                        <section><h1>I'm Marco!</h1>
+                        <section><h1>I'm <span class="doctrine-color">Marco</span>!</h1>
 </section>
-
-                    
-                    
-                
-                    
-                        <section><img src="assets/img/ocramius.gif" width="40%"/></section>
 
                     
                     
@@ -48,6 +42,12 @@
                     
                         <section><h1><a href="https://twitter.com/Ocramius" target="_blank">Ocramius</a></h1>
 </section>
+
+                    
+                    
+                
+                    
+                        <section><img src="assets/img/ocramius.gif" width="40%" class="crisp-image"/></section>
 
                     
                     
@@ -74,10 +74,10 @@
                     
                 
                     
-                        <section><h2 class="doctrine-color">Doctrine Project</h2>
+                        <section><h2><span class="doctrine-color">Doctrine Project</span></h2>
 
 <p>
-    A group of persistence-oriented libraries for <span class="php-color">PHP</span>
+    A group of <span class="doctrine-color">persistence-oriented</span> libraries for <span class="php-color">PHP</span>
 </p>
 </section>
 
@@ -85,8 +85,9 @@
                     
                 
                     
-                        <section><h2>We are looking for contributors!</h2>
-</section>
+                        <section><h2>We are looking for <span class="zf-color">contributors</span>!</h2>
+
+<p class="fragment">(Must be prepared to take unpopular decisions)</p></section>
 
                     
                     
@@ -110,7 +111,11 @@
                     
                 
                     
-                        <section><h2>Doctrine 2 ORM Best Practices</h2></section>
+                        <section><h2>
+    <span class="doctrine-color">Doctrine 2 ORM</span>
+    <br/>
+    <span class="zf-color">Best Practices</span>
+</h2></section>
 
                     
                     
@@ -128,6 +133,16 @@
                     
                 
                     
+                        <section><img
+    src="assets/img/read-the-docs.svg"
+    alt="Read the Documentation"
+    style="width: 50%"
+/></section>
+
+                    
+                    
+                
+                    
                         <section><h2><span class="doctrine-color">Knowledge</span> is <span class="zf-color">Power</span></h2></section>
 
                     
@@ -140,17 +155,7 @@
                     
                 
                     
-                        <section><img
-    src="assets/img/read-the-docs.svg"
-    alt="Read the Documentation"
-    style="width: 50%"
-/></section>
-
-                    
-                    
-                
-                    
-                        <section><h2>Know when an <span class="doctrine-color">ORM</span> is <span class="php-color">appropriate</span></h2>
+                        <section><h2>When is an <span class="doctrine-color">ORM</span> the <span class="php-color">appropriate</span> tool?</h2>
 </section>
 
                     
@@ -199,19 +204,47 @@
                     
                 
                     
-                        <section><h2>Reporting</h2></section>
+                        <section><h2>Reporting</h2>
+
+<p class="fragment">
+    That's what
+    <abbr title="Structured Query Language" class="zf-color">SQL</abbr>
+</p>
+
+<p class="fragment">
+    It's a
+    <strong class="php-color">QUERY</strong>
+    language, after all
+</p>
+</section>
 
                     
                     
                 
                     
-                        <section><h1><span class="zf-color">Designing</span> <span class="doctrine-color">Entities</span></h1></section>
+                        <section><h2>Where do we <strong>start</strong>?</h2>
+</section>
 
                     
                     
                 
                     
-                        <section><h2><span class="doctrine-color">Entities</span> represent what you <strong>want</strong></h2></section>
+                        <section><h2><span class="doctrine-color">Entities</span><span class="fragment"> (of course)</span></h2>
+
+<p class="fragment">Entities should work <strong>without</strong> the <span class="doctrine-color">ORM</span></p>
+
+<p class="fragment">Entities should work <strong>without</strong> the <span class="php-color">DB</span></p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <span class="doctrine-color">Entities</span>
+    (mostly) represent your
+    <strong class="php-color">domain</strong>
+</h2></section>
 
                     
                     
@@ -229,13 +262,20 @@
                     
                 
                     
-                        <section><h2>Define the <span class="php-color">Database</span> once you <strong>know</strong> what to do with it</h2></section>
+                        <section><h2>
+    Define the
+    <span class="php-color">Database</span>
+    <strong>after</strong>
+    modeling your
+    <span class="doctrine-color">domain</span>
+</h2>
+</section>
 
                     
                     
                 
                     
-                        <section><h2>Define <span class="doctrine-color">Mappings</span> <strong>after</strong> the <span class="doctrine-color">Entities</span></h2></section>
+                        <section><h2>Define <span class="doctrine-color">Mappings</span> <strong>after</strong> designing the <span class="doctrine-color">Entities</span></h2></section>
 
                     
                     
@@ -364,7 +404,70 @@ class User
                         <section><p class="fragment grow">More expressive</p>
 <p class="fragment grow">Easier to test</p>
 <p class="fragment grow">Less coupling</p>
-<p class="fragment grow">More flexibility</p>
+<p class="fragment grow">More flexible</p>
+<p class="fragment grow">Easier to refactor</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2><strong>Disallow</strong> <span class="doctrine-color">Collection</span> access from outside the <span class="doctrine-color">Entity</span></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code data-trim>
+class User
+{
+    private $bans;
+
+    public function getBans() {
+        return $this->bans;
+    }
+}
+</code></pre>
+
+<pre><code data-trim>
+public function banUser($userId)
+{
+    $user = $this->repository->find($userId);
+
+    $user->getBans()->add(new Ban($user));
+}
+</code></pre>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Keep <span class="doctrine-color">Collections</span> <strong>hidden</strong> in your <span class="doctrine-color">Entities</span></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code data-trim>
+class User
+{
+    private $bans;
+
+    public function ban() {
+        $this->bans[] = new Ban($this);
+    }
+}
+</code></pre>
+
+<pre><code data-trim>
+public function banUser($userId)
+{
+    $user = $this->repository->find($userId);
+
+    $user->ban();
+}
+</code></pre>
 </section>
 
                     
@@ -439,7 +542,7 @@ class User
                         <section><pre><code data-trim>
 class UserController
 {
-    // ...
+    // form reads from/writes to user entity (bad)
     public function registerAction()
     {
         $this->userForm->bind(new User());
@@ -450,7 +553,7 @@ class UserController
 <pre><code data-trim>
 class UserController
 {
-    // ...
+    // coupling between form and user (bad)
     public function registerAction()
     {
         $this->em->persist(User::fromFormData($this->form));
@@ -480,24 +583,545 @@ class UserController
                     
                 
                     
+                        <section><h2><strong>Avoid</strong> <span class="doctrine-color">Lifecycle Callbacks</span></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="doctrine-color">Lifecycle Callbacks</span> are a <strong class="php-color">Persistence Hack</strong></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><p>
+    <span class="doctrine-color">Lifecycle Callbacks</span>
+    are supposed to be the <span class="zf-color">ORM-specific</span>
+    <code class="php-color">serialize</code> and <code class="php-color">unserialize</code>
+</p></section>
+
+                    
+                    
+                
+                    
+                        <section><p>
+    Don't use
+    <span class="doctrine-color">Lifecycle Callbacks</span>
+    for <span class="zf-color">Business Logic/Events</span>
+</p></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><strong>Avoid</strong> <span class="php-color">auto-generated</span> <span class="doctrine-color">identifiers</span></h2>
+
+<p class="fragment">Your db operations will <strong>block</strong> each other</p>
+<p class="fragment">You are denying <strong>bulk inserts</strong></p>
+<p class="fragment">You cannot make <strong>multi-request transactions</strong></p>
+<p class="fragment">Your object is <strong>invalid</strong> until saved</p>
+<p class="fragment">Your object <strong>does not work</strong> without the <span class="php-color">DB</span></p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Use <span class="doctrine-color">UUIDs</span> instead</h2>
+
+<p class="fragment">Don't forget that a <span class="doctrine-color">UUID</span> is just a <span class="php-color">128 bit integer</span>!</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="php-color">auto_increment</span> is <strong>abused</strong> for <span class="zf-color">sorting</span></h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2><strong>Avoid</strong> <span class="php-color">derived</span> <span class="doctrine-color">primary keys</span></h2>
+
+<p class="fragment">You are just normalizing for the sake of it</p>
+
+<p class="fragment">Does your domain really <strong>NEED</strong> it?</p></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><strong>Avoid</strong> <span class="php-color">composite</span> <span class="doctrine-color">primary keys</span></h2>
+
+<p class="fragment">
+    Any reason to not use an
+    <span class="zf-color">unique constraint</span>
+    instead?
+</p>
+
+<p class="fragment">
+    Do they
+    <strong>make a difference</strong>
+    in your
+    <span class="php-color">domain</span>?
+</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2><strong>Favour</strong> <span class="doctrine-color">immutable</span> entities</h2></section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code data-trim>
+class PrivateMessage
+{
+    private $from;
+    private $to;
+    private $message;
+    private $read = [];
+
+    public function __construct(User $from, User $to, $message)
+    {
+        // ...
+    }
+
+    public function read(User $user) {
+        $this->read[] = new MessageRead($user, $this);
+    }
+}
+</code></pre></section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code data-trim>
+class MessageRead
+{
+    private $user;
+    private $message;
+
+    public function __construct(User $user, Message $message)
+    {
+        $this->id      = Uuid::uuidV4();
+        $this->user    = $user;
+        $this->message = $user;
+    }
+}
+</code></pre></section>
+
+                    
+                    
+                
+                    
+                        <section><p><span class="doctrine-color">Immutable data</span> is <strong>simple</strong></p>
+
+<p class="fragment"><span class="doctrine-color">Immutable data</span> is <strong>cacheable</strong> (<span class="doctrine-color">forever</span>)</p>
+
+<p class="fragment"><span class="doctrine-color">Immutable data</span> is <strong>predictable</strong></p>
+
+<p class="fragment"><span class="doctrine-color">Immutable data</span> enables <strong>historical analysis</strong></p>
+
+</section>
+
+                    
+                    
+                
+                    
+                        <section><p>You may want to look at <span class="doctrine-color">Event Sourcing</span>...</p></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><strong>Avoid</strong> <span class="php-color">Soft-Deletes</span></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="php-color">Soft Deletes</span> are a <strong>broken</strong> idea</h2>
+
+</section>
+
+                    
+                    
+                
+                    
+                        <section><p>
+    <span class="php-color">Soft Deletes</span>
+    come from an era where keeping everything in a
+    <span class="php-color">single DB</span>
+    was required
+</p></section>
+
+                    
+                    
+                
+                    
+                        <section><p>
+    <span class="php-color">Soft Deletes</span>
+    break
+    <span class="doctrine-color">immutability</span>
+</p></section>
+
+                    
+                    
+                
+                    
+                        <section><p>
+    <span class="php-color">Soft Deletes</span>
+    can usually be replaced with more specific
+    <span class="doctrine-color">domain</span>
+    concepts
+</p></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="doctrine-color">Mapping driver</span> choice</h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Use <span class="doctrine-color">Annotations</span> in <span class="php-color">private</span> packages</h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Use <span class="doctrine-color">XML Mappings</span> in <span class="php-color">public</span> packages</h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="doctrine-color">Lazy</span> or <span class="php-color">Eager</span>?</h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="php-color">Eager Loading</span> is <strong>Useless</strong></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="doctrine-color">Extra Lazy</span> indicates <strong>high risk</strong> areas</h2>
+
+<p class="fragment">We reach the limits of the ORM</p>
+<p class="fragment">
+    Careful about
+    <span class="zf-color">performance</span>/<span class="php-color">transaction</span>
+    size!
+</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2><strong>Avoid</strong> <span class="php-color">bi-directional</span> <span class="doctrine-color">associations</span></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="php-color">bi-directional</span> <span class="doctrine-color">associations</span> are <strong>overhead</strong></h2>
+
+<p class="fragment">Code <strong>only</strong> what you need for your <span class="doctrine-color">domain logic</span> to work</p>
+
+<p class="fragment">Hack complex <span class="doctrine-color">DQL</span> queries instead of making them simpler with bi-directionality</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    Use
+    <span class="doctrine-color">custom repositories</span>
+    for improved <span class="zf-color">expressiveness</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code data-trim>
+final class UserRepository
+{
+    public function findUsersThatHaveAMonthlySubscription()
+    {
+        // ... INSERT DQL/SQL HELL HERE ...
+    }
+}
+</code></pre></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <span class="doctrine-color">Query Functions</span>
+    are better than
+    <span class="doctrine-color">repositories</span>
+</h2></section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code data-trim>
+final class UsersThatHaveAMonthlySubscription
+{
+    public function __construct(EntityManagerInterface $em) { ... }
+
+    public function __invoke()
+    {
+        // ... INSERT DQL/SQL HELL HERE ...
+    }
+}
+</code></pre></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="doctrine-color">Repositories</span> are <span class="zf-color">Services</span></h2>
+
+<p class="fragment">So are <span class="doctrine-color">Query Functions</span></p></section>
+
+                    
+                    
+                
+                    
+                        <section><p><strong>Avoid</strong> <code class="doctrine-color">ObjectManager#getRepository()</code></p>
+
+<p class="fragment">It is a <span class="php-color">ServiceLocator</span></p>
+<p class="fragment">It causes the same problems of the <span class="php-color">ServiceLocator</span></p></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><strong>Inject</strong> <span class="doctrine-color">Repositories</span> instead</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><p><strong>Separate</strong> <code class="doctrine-color">MyRepository#get()</code> and <code class="doctrine-color">MyRepository#find()</code></p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><p><code class="doctrine-color">MyRepository#find()</code> can return <code class="php-color">null</code></p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><p><code class="doctrine-color">MyRepository#get()</code> cannot return <code class="php-color">null</code></p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code data-trim>
+final class BlogPostRepository
+{
+    // ...
+
+    public function getBySlug($slug)
+    {
+        $found = $this->findOneBy(['slug' => (string) $slug]);
+
+        if (! $found) {
+            throw BlogPostNotFoundException::bySlug($slug);
+        }
+
+        return $found;
+    }
+}
+</code></pre>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><p>
+    Using a
+    <code class="doctrine-color">get()</code>
+    method that <code>throws</code>,
+    <br/>
+    you can simplify <span class="zf-color">error logic</span>
+</p></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Avoid <abbr title="Two Phase Commits" class="php-color">2pc</abbr></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Keep <span class="doctrine-color">transactions</span> unrelated</h2>
+
+<p>
+    Use
+    <code class="doctrine-color">ObjectManager#clear()</code>
+    between different
+    <code class="doctrine-color">ObjectManager#flush()</code>
+    calls
+</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    Different <span class="php-color">boundaries</span>
+    <br/>
+    <strong>=</strong>
+    <br/>
+    Different <span class="doctrine-color">transactions</span>
+</h2></section>
+
+                    
+                    
+                
+                    
+                        <section><p>
+    Communicate between
+    <span class="zf-color">boundaries</span>
+    via
+    <span class="doctrine-color">identifiers</span>,
+    <br/>
+    <strong>not</strong>
+    <span class="php-color">object references</span>
+</p></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Keep <span class="php-color">Normalization</span> under control</h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Keep <span class="php-color">Normalization</span> (freaks) under control</h2></section>
+
+                    
+                    
+                
+                    
+                        <section><p>You may need to gag your <span class="php-color">DBA</span>...</p>
+
+<p class="fragment">Or get him to understand your needs</p>
+
+<p class="fragment">Academic and practical knowledge <strong>may</strong> differ</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>What about <span class="doctrine-color">Performance</span>?</h2></section>
+
+                    
+                    
+                
+                    
                         <section><h2>Know how the <span class="doctrine-color">ORM</span> is <span class="zf-color">structured</span></h2></section>
 
                     
                     
                 
                     
-                        <section><p class="fragment grow">EntityManager</p>
-<p class="fragment grow">UnitOfWork</p>
-<p class="fragment grow">Metadata Drivers</p>
-<p class="fragment grow">DQL</p>
-<p class="fragment grow">Repositories</p>
-<p class="fragment grow">Second Level Cache</p></section>
+                        <section><p class="fragment shrink highlight-blue">EntityManager</p>
+<p class="fragment grow highlight-red">UnitOfWork</p>
+<p class="fragment shrink highlight-blue">Metadata Drivers</p>
+<p class="fragment grow highlight-red">DQL</p>
+<p class="fragment grow highlight-red">Repositories</p>
+<p class="fragment grow highlight-red">Second Level Cache</p></section>
 
                     
                     
                 
                     
-                        <section><h2><span class="doctrine-color">Entities</span> should <strong>always</strong> be <span class="zf-color">valid</span></h2></section>
+                        <section><h2>Profile these <span class="doctrine-color">hotsposts</span></h2>
+
+<p class="fragment">Measuring is the only way</p>
+
+<p class="fragment">There are other talks about this...</p></section>
+
+                    
+                    
+                
+                    
+                        <section><h1>RECAP</h1></section>
+
+                    
+                    
+                
+                    
+                        <section><h2><span class="doctrine-color">Domain</span> <span class="zf-color">First</span></h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <strong>Do not</strong>
+    <span class="doctrine-color">normalize</span>
+    without a
+    <strong>need</strong>
+    for it
+</h2>
+
+<p class="fragment">Otherwise, you're digging your own grave!</p></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    Consider using
+    <span class="doctrine-color">Separate</span>
+    <span class="zf-color">DBs</span>
+</h2>
+
+<p class="fragment">
+    <span class="doctrine-color">Transactional Data</span>
+    <br/>
+    !=
+    <br/>
+    <span class="php-color">Reporting Data</span>
+</p></section>
 
                     
                     
@@ -520,7 +1144,7 @@ class UserController
                 progress:     true,
                 history:      true,
                 center:       true,
-                transition:   'slide',
+                transition:   'none',
                 // Optional reveal.js plugins
                 dependencies: [
                     {
