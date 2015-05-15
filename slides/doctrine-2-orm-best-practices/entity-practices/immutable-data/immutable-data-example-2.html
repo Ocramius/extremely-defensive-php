@@ -6,7 +6,7 @@ class MessageRead
 
     public function __construct(User $user, Message $message)
     {
-        $this->id      = Uuid::uuidV4();
+        $this->id      = Uuid::uuid4();
         $this->user    = $user;
         $this->message = $user;
     }
