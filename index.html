@@ -577,6 +577,10 @@ class UserController
                         <section><h2>
     Both <span class="php-color">Symfony\Form</span> and <span class="zf-color">Zend\Form</span> are terrible
 </h2>
+
+<p class="fragment">(For this use-case)</p>
+
+<p class="fragment">Use a <span class="doctrine-color">DTO</span> instead</p>
 </section>
 
                     
@@ -637,7 +641,21 @@ class UserController
                     
                 
                     
+                        <section><pre><code data-trim>
+public function __construct()
+{
+    $this->id = Uuid::uuid4();
+}
+</code></pre>
+</section>
+
+                    
+                    
+                
+                    
                         <section><h2><span class="php-color">auto_increment</span> is <strong>abused</strong> for <span class="zf-color">sorting</span></h2>
+
+<p class="fragment">Are you looking for a <span class="doctrine-color">DATETIME</span> field instead?</p>
 </section>
 
                     
@@ -711,7 +729,7 @@ class MessageRead
 
     public function __construct(User $user, Message $message)
     {
-        $this->id      = Uuid::uuidV4();
+        $this->id      = Uuid::uuid4();
         $this->user    = $user;
         $this->message = $user;
     }
@@ -767,11 +785,29 @@ class MessageRead
                     
                 
                     
-                        <section><p>
+                        <section><h2>
     <span class="php-color">Soft Deletes</span>
-    break
+    <br/>
+    <strong>break</strong>
+    <br/>
     <span class="doctrine-color">immutability</span>
-</p></section>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <span class="php-color">Soft Deletes</span>
+    <br/>
+    <strong>break</strong>
+    <br/>
+    <span class="doctrine-color">Data integrity</span>
+</h2>
+
+<p class="fragment">(and therefore validity)</p>
+</section>
 
                     
                     
