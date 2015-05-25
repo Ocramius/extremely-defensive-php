@@ -13,6 +13,10 @@
     "extremely-defensive-php/the-talk/extremely-defensive-php.html",
     "extremely-defensive-php/the-talk/what-is-this-talk-about.html",
     "extremely-defensive-php/the-talk/this-talk-is-about-extremism.html",
+    {
+        "background": "assets/img/feature-creep.png",
+        "path":       null
+    },
 
     "outro/thanks.html"
 ]
