@@ -25,6 +25,10 @@
     "extremely-defensive-php/what-is-defensive-coding/i-am-dumb.html",
     "extremely-defensive-php/what-is-defensive-coding/we-are-dumb.html",
     "extremely-defensive-php/what-is-defensive-coding/everyone-is-dumb.html",
+    {
+        "background": null,
+        "path":       "extremely-defensive-php/what-is-defensive-coding/everyone-gets-a-dumb.html"
+    },
 
     "outro/thanks.html"
 ]
