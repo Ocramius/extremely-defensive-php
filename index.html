@@ -264,15 +264,6 @@
                     
                 
                     
-                        <section><h2>Poka Yoke</h2>
-
-<!-- @TODO: add wikipedia stuff here -->
-</section>
-
-                    
-                    
-                
-                    
                         <section><!-- @TODO: clean code book image -->
 <h2>Clean Code (IMG)</h2>
 
@@ -290,6 +281,36 @@
                     
                         <section><!-- @TODO: effective-java book image -->
 <h2>Effective Java (IMG)</h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Poka Yoke</h2>
+
+<p class="fragment">
+    <span class="zf-color">Avoid</span>
+    <span class="doctrine-color">Mistakes</span>
+</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><!-- @TODO: add rj45 image here -->
+
+<p class="fragment">Only one way to plug it in</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><!-- @TODO: add USB image here -->
+
+<p class="fragment">Maybe <strong>NOT</strong> such a good design</p>
+</section>
 
                     
                     
@@ -369,6 +390,402 @@
 <h2 class="fragment">
     <strong>NOT</strong> for your <br/><span class="php-color">re-use-case</span>
 </h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><blockquote cite="http://en.wikipedia.org/wiki/Sturgeon's_law">
+    <p>ninety percent of everything is crap.</p>
+    <cite>Theodore Sturgeon</cite>
+</blockquote>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    Don't write
+    <span class="zf-color">Crap</span>
+</h2>
+
+<h2 class="fragment">
+    Don't write
+    <span class="php-color">Code</span>
+</h2>
+
+<p class="fragment">Write only what you <strong>REALLY</strong> need</p></section>
+
+                    
+                    
+                
+                    
+                        <section><h1>
+    <span class="zf-color">Good</span>
+    <span class="doctrine-color">Practices</span>
+</h1>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h1>
+    Assuming
+    <abbr title="SOLID" class="doctrine-color">SOLID</abbr>
+    <!-- @todo can't remember the SOLID acronym -->
+    code
+</h1>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    All
+    <span class="php-color">State</span>
+    should be
+    <span class="doctrine-color">Encapsulated</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code class="trim">
+class BankAccount
+{
+    // ...
+
+    public function setLastRefresh(DateTime $lastRefresh)
+    {
+        $this->lastRefresh = $lastRefresh;
+    }
+}
+</code></pre>
+
+<p class="fragment">(examples are purposely simplified/silly!)</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code class="trim">
+$currentTime = new DateTime();
+
+$bankAccount1->setLastRefresh($currentTime);
+$bankAccount2->setLastRefresh($currentTime);
+</code></pre>
+
+<pre class="fragment"><code class="trim">
+// ... stuff
+</code></pre>
+
+<pre class="fragment"><code class="trim">
+$currentTime->setTimestamp($aTimestamp);
+</code></pre>
+
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code class="trim">
+class BankAccount
+{
+    // ...
+
+    public function setLastRefresh(DateTime $lastRefresh)
+    {
+        $this->lastRefresh = clone $lastRefresh;
+    }
+}
+</code></pre>
+
+<pre><code class="trim">
+class BankAccount
+{
+    // ...
+
+    public function setLastRefresh(DateTimeImmutable $lastRefresh)
+    {
+        $this->lastRefresh = $lastRefresh;
+    }
+}
+</code></pre>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code class="trim">
+class MoneyTransfer
+{
+    public function __construct(Money $amount, DateTime $transferDate)
+    {
+        $this->amount       = $amount;
+        $this->transferDate = $transferDate;
+    }
+}
+</code></pre>
+
+<pre class="fragment"><code class="trim">
+class MoneyTransfer
+{
+    public function __construct(Money $amount, DateTime $transferDate)
+    {
+        $this->amount       = $amount;
+        $this->transferDate = clone $transferDate;
+    }
+}
+</code></pre>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <span class="zf-color">External Access</span>
+    includes
+    <span class="php-color">Subclasses</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    Make
+    <span class="php-color">State</span>
+    <span class="doctrine-color">Private</span>
+</h2>
+
+<p class="fragment">
+    <span class="doctrine-color">Private</span>
+    <span class="php-color">properties</span>
+</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2 class="fragment">
+    <span class="doctrine-color">Private</span>
+    <span class="php-color">properties</span>
+</h2>
+
+<p class="fragment">
+    <strong>BY DEFAULT!</strong>
+</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    The
+    <span class="doctrine-color">Constructor</span>
+    is the
+    <strong>ONLY</strong>
+    <span class="zf-color">injection point</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <strong>No</strong>
+    <span class="php-color">un-initialized properties</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <span class="php-color">Optional</span>
+    <span class="zf-color">Dependencies</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code class="trim">
+class DbConnection
+{
+    public function __construct(...)
+    {
+        // ...
+    }
+
+    public function setLogger(Logger $logger = null)
+    {
+        $this->logger = $logger;
+    }
+}
+</code></pre>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <span class="php-color">Optional dependencies</span>
+    <strong>Do Not Exist!</strong>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code class="trim">
+class DbConnection
+{
+    public function __construct(..., Logger $logger)
+    {
+        // ...
+    }
+
+    // look ma, no setters!
+}
+</code></pre>
+
+<pre><code class="trim">
+$dbConnection = new DbConnection(..., new FakeLogger());
+</code></pre>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <strong>No</strong>
+    <span class="php-color">Setters</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <span class="php-color">Setters</span>
+    don't mean
+    <strong>Anything</strong>, anyway
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    Make
+    <span class="php-color">State</span>
+    <span class="doctrine-color">Immutable</span>
+</h2>
+
+<p class="fragment">
+    Greatly reduces
+    <span class="php-color">bugs</span>
+    and
+    <span class="php-color">cognitive load</span>
+</p>
+
+<p class="fragment">
+    <!-- @TODO PSR-7 link -->
+    <a href="#TODO" class="doctrine-color">PSR-7</a>
+    got this <strong>right</strong>!
+</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    What about <span class="zf-color">performance</span>?
+</h2>
+
+<p class="fragment">
+    Profile!
+</p>
+
+<p class="fragment">
+    Profile!
+</p>
+
+<p class="fragment">
+    Profile!
+</p>
+
+<p class="fragment">
+    <code>> O(log(n))</code>
+</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <strong>Avoid</strong>
+    <span class="php-color">Logic Switch Parameters</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code class="trim">
+class Spammer
+{
+    public function spam($email, $template, $optOutLink = false)
+    {
+        // yes, this is a really bad spammer
+    }
+}
+</code></pre>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code class="trim">
+class Spammer
+{
+    public function sendIllegalSpam($email, $template)
+    {
+        // without opt-out link
+    }
+
+    public function sendApparentlyLegalSpam($email, $template)
+    {
+        // with opt-out link
+    }
+}
+</code></pre>
 </section>
 
                     

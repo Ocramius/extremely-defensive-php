@@ -76,5 +76,9 @@
     "extremely-defensive-php/good-practices/immutable-state/use-immutable-wherever-possible.html",
     "extremely-defensive-php/good-practices/immutable-state/what-about-performance.html",
 
+    "extremely-defensive-php/good-practices/logic-switch-parameters/avoid-logic-switch-parameters.html",
+    "extremely-defensive-php/good-practices/logic-switch-parameters/logic-switch-mailer-example.html",
+    "extremely-defensive-php/good-practices/logic-switch-parameters/logic-switch-mailer-fixed-example.html",
+
     "outro/thanks.html"
 ]
