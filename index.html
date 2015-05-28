@@ -594,6 +594,79 @@ class MoneyTransfer
                 
                     
                         <section><h2>
+    <strong>Avoid</strong>
+    unnecessary
+    <span class="php-color">public methods</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <strong>Unnecessary</strong>
+    <br/>
+    =
+    <br/>
+    you can find
+    <br/>
+    <strong>another way</strong>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><blockquote>
+    A public method is like a child: once you've written it, you are going to maintain it for the rest of its life!
+    <cite>Stefan Priebsch</cite>
+</blockquote>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    ... and if you apply
+    <br/>
+    <span class="zf-color">Immutability</span>
+    and the
+    <abbr title="Single Responsibility Principle" class="doctrine-color">SRP</abbr>
+    <br/>
+    to the <strong>extreme</strong> ...
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><blockquote>
+    Good object oriented programming is pretty much functional programming
+    <cite>Anthony Ferrara</cite>
+</blockquote>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    You can make
+    <br/>
+    <code>invokable</code>
+    <span class="zf-color">classes</span>!
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
     The
     <span class="doctrine-color">Constructor</span>
     is the
@@ -1192,7 +1265,9 @@ interface AuthService
     /**
      * @return bool
      *
-     * @throws \InvalidArgumentException
+     * @throws InvalidArgumentException
+     * @throws IncompatibleCredentialsExample
+     * @throws UnavailableBackendException
      */
     public function authenticate(Credentials $credentials);
 }
@@ -1234,6 +1309,14 @@ class MyLogin
 
 <p class="fragment">
     A <code class="php-color">InvalidArgumentException</code> is thrown
+</p>
+
+<p class="fragment">
+    A <code class="php-color">IncompatibleCredentialsExample</code> is thrown
+</p>
+
+<p class="fragment">
+    A <code class="php-color">UnavailableBackendException</code> is thrown
 </p>
 
 <p class="fragment">

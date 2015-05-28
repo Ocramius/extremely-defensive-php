@@ -66,7 +66,9 @@
     "extremely-defensive-php/good-practices/single-method-classes/avoid-unnecessary-public-methods.html",
     "extremely-defensive-php/good-practices/single-method-classes/unnecessary-not-very-striclty-required.html",
     "extremely-defensive-php/good-practices/single-method-classes/a-public-method-is-like-a-child.html",
+    "extremely-defensive-php/good-practices/single-method-classes/and-if-you-apply-srp-to-the-extreme.html",
     "extremely-defensive-php/good-practices/single-method-classes/good-object-oriented-programming-is-pretty-much-functional-programming.html",
+    "extremely-defensive-php/good-practices/single-method-classes/make-classes-invokable.html",
 
     "extremely-defensive-php/good-practices/constructor-as-only-mutator/constructor-is-your-only-injection-point.html",
     "extremely-defensive-php/good-practices/constructor-as-only-mutator/no-un-initialized-properties.html",
