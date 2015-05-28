@@ -64,6 +64,7 @@
     "extremely-defensive-php/good-practices/encapsulation/logger-optional-example.html",
     "extremely-defensive-php/good-practices/encapsulation/there-are-no-optional-dependencies.html",
     "extremely-defensive-php/good-practices/encapsulation/logger-required-example.html",
+    "extremely-defensive-php/good-practices/encapsulation/make-state-private.html",
 
     "outro/thanks.html"
 ]
