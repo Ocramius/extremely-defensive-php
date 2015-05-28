@@ -71,5 +71,8 @@
     "extremely-defensive-php/good-practices/no-setters/no-setters.html",
     "extremely-defensive-php/good-practices/no-setters/setters-do-not-mean-anything.html",
 
+    "extremely-defensive-php/good-practices/immutable-state/use-immutable-wherever-possible.html",
+    "extremely-defensive-php/good-practices/immutable-state/what-about-performance.html",
+
     "outro/thanks.html"
 ]
