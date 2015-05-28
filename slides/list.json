@@ -56,6 +56,7 @@
     "extremely-defensive-php/good-practices/encapsulation/getter-datetime-example-bug.html",
     "extremely-defensive-php/good-practices/encapsulation/getter-datetime-example-fixed.html",
     "extremely-defensive-php/good-practices/encapsulation/constructor-datetime-example.html",
+    "extremely-defensive-php/good-practices/encapsulation/external-access-includes-subclasses.html",
 
     "extremely-defensive-php/good-practices/encapsulation/constructor-is-your-only-injection-point.html",
     "extremely-defensive-php/good-practices/encapsulation/no-un-initialized-properties.html",
