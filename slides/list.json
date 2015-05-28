@@ -113,6 +113,7 @@
     "extremely-defensive-php/good-practices/serializable/serialize-only-if-serializable.html",
 
     "extremely-defensive-php/good-practices/testing/testing.html",
+    "extremely-defensive-php/good-practices/testing/test-all-scenarios.html",
 
     "outro/thanks.html"
 ]
