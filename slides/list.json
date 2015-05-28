@@ -87,5 +87,8 @@
     "extremely-defensive-php/good-practices/parameter-types/value-objects-ensure-consistency.html",
     "extremely-defensive-php/good-practices/parameter-types/value-objects-simplify-data-validation.html",
 
+    "extremely-defensive-php/good-practices/return-types/no-mixed-return-types.html",
+    "extremely-defensive-php/good-practices/return-types/value-objects-ftw.html",
+
     "outro/thanks.html"
 ]

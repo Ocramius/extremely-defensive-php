@@ -792,6 +792,97 @@ class Spammer
                     
                 
                     
+                        <section><h2>
+    <strong>No</strong>
+    <span class="php-color">Mixed</span>
+    <span class="zf-color">Parameter Types</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code class="trim">
+class PrisonerTransferRequest
+{
+    /**
+     * @param mixed $accessLevel
+     *                           - false if none
+     *                           - true if guards are required
+     *                           - null if to be decided
+     *                           - 10 if special cargo is needed
+     *                           - 20 if high security is needed
+     */
+    public function approve($securityLevel)
+    {
+        // ...
+    }
+}
+</code></pre>
+
+<h2 class="fragment">WTFBBQ?!</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code class="trim">
+class PrisonerTransferRequest
+{
+    public function approve(PrisonerSecurityLevel $securityLevel)
+    {
+        // ...
+    }
+}
+</code></pre>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <span class="doctrine-color">Value Objects</span>
+    <strong>FTW</strong>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <span class="doctrine-color">Value Objects</span>
+    ensure
+    <span class="zf-color">Consistency</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <span class="doctrine-color">Value Objects</span>
+    simplify
+    <span class="zf-color">Data Validation</span>
+</h2>
+
+<pre class="fragment"><code class="trim">
+register(new EmailAddress('ocramius@gmail.com'));
+</code></pre>
+
+<p class="fragment">
+    No need to re-validate inside <code>register()</code>!
+</p>
+</section>
+
+                    
+                    
+                
+                    
                         <section><h2>Thanks!</h2>
 </section>
 
