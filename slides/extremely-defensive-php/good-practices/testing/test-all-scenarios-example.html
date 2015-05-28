@@ -1,0 +1,32 @@
+<pre><code class="trim">
+interface AuthService
+{
+    /**
+     * @return bool
+     *
+     * @throws \InvalidArgumentException
+     */
+    public function authenticate(Credentials $credentials);
+}
+</code></pre>
+
+<pre class="fragment"><code class="trim">
+class MyLogin
+{
+    public function __construct(AuthService $auth) { $this->auth = $auth; }
+    public function login($username, $password)
+    {
+        if ($this->auth->authenticate(new BasicCredentials($username, $password)) {
+            // ...
+
+            return true;
+        }
+
+        return false;
+    }
+}
+</code></pre>
+
+<p class="fragment">
+    What <strong>can happen</strong> here?
+</p>

@@ -114,6 +114,8 @@
 
     "extremely-defensive-php/good-practices/testing/testing.html",
     "extremely-defensive-php/good-practices/testing/test-all-scenarios.html",
+    "extremely-defensive-php/good-practices/testing/test-all-scenarios-example.html",
+    "extremely-defensive-php/good-practices/testing/test-all-scenarios-example-cases.html",
 
     "outro/thanks.html"
 ]
