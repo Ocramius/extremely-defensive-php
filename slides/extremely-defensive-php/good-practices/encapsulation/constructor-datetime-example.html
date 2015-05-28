@@ -1,0 +1,21 @@
+<pre><code class="trim">
+class MoneyTransfer
+{
+    public function __construct(Money $amount, DateTime $transferDate)
+    {
+        $this->amount       = $amount;
+        $this->transferDate = $transferDate;
+    }
+}
+</code></pre>
+
+<pre class="fragment"><code class="trim">
+class MoneyTransfer
+{
+    public function __construct(Money $amount, DateTime $transferDate)
+    {
+        $this->amount       = $amount;
+        $this->transferDate = clone $transferDate;
+    }
+}
+</code></pre>

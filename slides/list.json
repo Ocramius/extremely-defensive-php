@@ -55,6 +55,7 @@
     "extremely-defensive-php/good-practices/encapsulation/getter-datetime-example.html",
     "extremely-defensive-php/good-practices/encapsulation/getter-datetime-example-bug.html",
     "extremely-defensive-php/good-practices/encapsulation/getter-datetime-example-fixed.html",
+    "extremely-defensive-php/good-practices/encapsulation/constructor-datetime-example.html",
 
     "outro/thanks.html"
 ]
