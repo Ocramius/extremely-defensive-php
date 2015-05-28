@@ -61,6 +61,7 @@
     "extremely-defensive-php/good-practices/encapsulation/no-un-initialized-properties.html",
     "extremely-defensive-php/good-practices/encapsulation/optional-dependencies.html",
     "extremely-defensive-php/good-practices/encapsulation/logger-optional-example.html",
+    "extremely-defensive-php/good-practices/encapsulation/there-are-no-optional-dependencies.html",
 
     "outro/thanks.html"
 ]
