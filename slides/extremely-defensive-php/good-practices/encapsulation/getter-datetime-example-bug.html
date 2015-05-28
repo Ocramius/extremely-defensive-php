@@ -1,0 +1,15 @@
+<pre><code class="trim">
+$currentTime = new DateTime();
+
+$bankAccount1->setLastRefresh($currentTime);
+$bankAccount2->setLastRefresh($currentTime);
+</code></pre>
+
+<pre class="fragment"><code class="trim">
+// ... stuff
+</code></pre>
+
+<pre class="fragment"><code class="trim">
+$bankAccount2->getLastRefresh()->setTimestamp($aTimestamp);
+</code></pre>
+

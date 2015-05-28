@@ -1,0 +1,23 @@
+<pre><code class="trim">
+class BankAccount
+{
+    // ...
+
+    public function setLastRefresh(DateTime $lastRefresh)
+    {
+        $this->lastRefresh = clone $lastRefresh;
+    }
+}
+</code></pre>
+
+<pre><code class="trim">
+class BankAccount
+{
+    // ...
+
+    public function setLastRefresh(DateTimeImmutable $lastRefresh)
+    {
+        $this->lastRefresh = $lastRefresh;
+    }
+}
+</code></pre>
