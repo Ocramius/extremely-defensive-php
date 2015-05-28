@@ -883,6 +883,271 @@ register(new EmailAddress('ocramius@gmail.com'));
                     
                 
                     
+                        <section><h2>
+    <strong>No</strong>
+    <span class="php-color">Mixed</span>
+    <span class="zf-color">Return Types</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <span class="doctrine-color">Value Objects</span>, again!
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <strong>Avoid</strong>
+    <span class="php-color">Fluent Interfaces</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code class="trim">
+$thing
+    ->doFoo();
+    ->doBar();
+</code></pre>
+
+<pre class="fragment"><code class="trim">
+$thing = $thing->doFoo();
+$thing = $thing->doBar();
+</code></pre>
+
+<pre class="fragment"><code class="trim">
+$thing->doFoo();
+$thing->doBar();
+</code></pre>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h1>
+    <strong class="doctrine-color">POKA</strong>
+    <strong class="zf-color">YOKE</strong>
+    <strong>!!!!!!!1!!ONE</strong>
+</h1>
+
+<p class="fragment">
+    Only
+    <strong>ONE</strong>
+    way!
+</p></section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code class="trim">
+$thing->doFoo();
+$thing->doBar();
+</code></pre>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><!-- @TODO add link to blogpost --></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    Make
+    <span class="php-color">Classes</span>
+    <span class="doctrine-color">Final</span>
+    <strong>By Default</strong>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    An
+    <span class="php-color">Extension</span>
+    is a different
+    <span class="zf-color">Use-Case</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    Does
+    <span class="php-color">Extending</span>
+    the
+    <span class="zf-color">Interface</span>
+    <strong>add</strong>
+    <span class="doctrine-color">Any Meaning</span>?
+</h2>
+
+<p class="fragment">
+    If not, then do not use <code>extends</code>.
+</p>
+
+<p class="fragment">
+    You don't even need <code>extends</code>.
+</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><!-- @TODO add link to blogpost --></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <strong>Ensure</strong>
+    <span class="doctrine-color">Deep Cloning</span>
+</h2></section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code class="trim">
+class LoginRequest
+{
+    public function __clone()
+    {
+        $this->time = clone $this->time;
+    }
+}
+</code></pre>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><p>
+    <span class="php-color">Cloning</span>
+    <strong>requires</strong>
+    <span class="zf-color">encapsulated state</span>
+    <strong>understanding</strong>
+</p>
+
+<p class="fragment">
+    ... which is a <strong>contradiction</strong>!
+</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    Or
+    <strong>Disable</strong>
+    <span class="php-color">Cloning</span>
+</h2></section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code class="trim">
+class Human
+{
+    public function __clone()
+    {
+        throw new \DomainException(
+            'Why would you even clone me?!'
+            . 'It\'s currently illegal!'
+        );
+    }
+}
+</code></pre>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>Same for <span class="php-color">Serialization</span>!</h2></section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    Is it
+    <strong>really</strong>
+    <span class="zf-color">Serializable</span>?
+</h2>
+
+<p class="fragment">
+    Do you know the
+    <span class="php-color">lifecycle</span>
+    of
+    <strong>every</strong>
+    <span class="doctrine-color">dependency?</span>
+</p>
+
+<p class="fragment">
+    Is your
+    <span class="php-color">object</span>
+    even
+    <strong>supposed</strong>
+    to be
+    <span class="zf-color">stored</span>
+    somewhere?
+</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code class="trim">
+class MyAwesomeThing
+{
+    public function __sleep()
+    {
+        throw new \BadMethodCallException('NO! MY THING! CANNOT HAZ!');
+    }
+}
+</code></pre>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    Maybe
+    <span class="php-color">serialize()</span>
+    <strong>only</strong>
+    if it is a
+    <span class="zf-color">Serializable</span>?
+</h2></section>
+
+                    
+                    
+                
+                    
                         <section><h2>Thanks!</h2>
 </section>
 

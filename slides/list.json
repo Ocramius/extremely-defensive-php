@@ -107,5 +107,10 @@
     "extremely-defensive-php/good-practices/deep-cloning/disable-cloning.html",
     "extremely-defensive-php/good-practices/deep-cloning/disable-cloning-example.html",
 
+    "extremely-defensive-php/good-practices/serializable/same-for-serialization.html",
+    "extremely-defensive-php/good-practices/serializable/is-it-really-serializable.html",
+    "extremely-defensive-php/good-practices/serializable/disable-serialization.html",
+    "extremely-defensive-php/good-practices/serializable/serialize-only-if-serializable.html",
+
     "outro/thanks.html"
 ]
