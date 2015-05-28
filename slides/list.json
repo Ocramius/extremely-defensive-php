@@ -94,9 +94,12 @@
     "extremely-defensive-php/good-practices/no-fluent-interfaces/fluent-interface-usages-example.html",
     "extremely-defensive-php/good-practices/no-fluent-interfaces/poka-yoke.html",
     "extremely-defensive-php/good-practices/no-fluent-interfaces/fluent-interface-usages-fixed-example.html",
+    "extremely-defensive-php/good-practices/final-classes/blog-post-reference.html",
 
     "extremely-defensive-php/good-practices/final-classes/final-by-default.html",
     "extremely-defensive-php/good-practices/final-classes/an-extension-is-a-different-use-case.html",
+    "extremely-defensive-php/good-practices/final-classes/does-extending-the-interface-add-meaning.html",
+    "extremely-defensive-php/good-practices/final-classes/blog-post-reference.html",
 
     "outro/thanks.html"
 ]
