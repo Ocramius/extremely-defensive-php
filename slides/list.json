@@ -59,6 +59,7 @@
 
     "extremely-defensive-php/good-practices/encapsulation/constructor-is-your-only-injection-point.html",
     "extremely-defensive-php/good-practices/encapsulation/no-un-initialized-properties.html",
+    "extremely-defensive-php/good-practices/encapsulation/optional-dependencies.html",
 
     "outro/thanks.html"
 ]
