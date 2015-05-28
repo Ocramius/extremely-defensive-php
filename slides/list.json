@@ -59,7 +59,9 @@
     "extremely-defensive-php/good-practices/encapsulation/getter-datetime-example-fixed.html",
     "extremely-defensive-php/good-practices/encapsulation/constructor-datetime-example.html",
     "extremely-defensive-php/good-practices/encapsulation/external-access-includes-subclasses.html",
-    "extremely-defensive-php/good-practices/encapsulation/make-state-private.html",
+
+    "extremely-defensive-php/good-practices/private-properties/make-state-private.html",
+    "extremely-defensive-php/good-practices/private-properties/all-properties-private-by-default.html",
 
     "extremely-defensive-php/good-practices/constructor-as-only-mutator/constructor-is-your-only-injection-point.html",
     "extremely-defensive-php/good-practices/constructor-as-only-mutator/no-un-initialized-properties.html",
