@@ -57,5 +57,7 @@
     "extremely-defensive-php/good-practices/encapsulation/getter-datetime-example-fixed.html",
     "extremely-defensive-php/good-practices/encapsulation/constructor-datetime-example.html",
 
+    "extremely-defensive-php/good-practices/encapsulation/constructor-is-your-only-injection-point.html",
+
     "outro/thanks.html"
 ]
