@@ -67,6 +67,7 @@
     "extremely-defensive-php/good-practices/constructor-as-only-mutator/logger-required-example.html",
 
     "extremely-defensive-php/good-practices/no-setters/no-setters.html",
+    "extremely-defensive-php/good-practices/no-setters/setters-do-not-mean-anything.html",
 
     "outro/thanks.html"
 ]
