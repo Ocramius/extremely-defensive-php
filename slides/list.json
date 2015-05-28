@@ -63,6 +63,11 @@
     "extremely-defensive-php/good-practices/private-properties/make-state-private.html",
     "extremely-defensive-php/good-practices/private-properties/all-properties-private-by-default.html",
 
+    "extremely-defensive-php/good-practices/single-method-classes/avoid-unnecessary-public-methods.html",
+    "extremely-defensive-php/good-practices/single-method-classes/unnecessary-not-very-striclty-required.html",
+    "extremely-defensive-php/good-practices/single-method-classes/a-public-method-is-like-a-child.html",
+    "extremely-defensive-php/good-practices/single-method-classes/good-object-oriented-programming-is-pretty-much-functional-programming.html",
+
     "extremely-defensive-php/good-practices/constructor-as-only-mutator/constructor-is-your-only-injection-point.html",
     "extremely-defensive-php/good-practices/constructor-as-only-mutator/no-un-initialized-properties.html",
     "extremely-defensive-php/good-practices/constructor-as-only-mutator/optional-dependencies.html",
