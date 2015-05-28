@@ -35,6 +35,8 @@
 
     "extremely-defensive-php/poka-yoke/where-do-these-concepts-come-from.html",
     "extremely-defensive-php/poka-yoke/poka-yoke.html",
+    "extremely-defensive-php/poka-yoke/poka-yoke-rj45.html",
+    "extremely-defensive-php/poka-yoke/poka-yoke-usb-not.html",
     "extremely-defensive-php/poka-yoke/clean-code.html",
     "extremely-defensive-php/poka-yoke/effective-java.html",
 
@@ -43,6 +45,9 @@
     "extremely-defensive-php/code-is-not-reusable/code-is-not-reusable.html",
     "extremely-defensive-php/code-is-not-reusable/code-is-crap.html",
     "extremely-defensive-php/code-is-not-reusable/abstractions-are-reusable.html",
+    "extremely-defensive-php/code-is-not-reusable/code-for-your-use-case-not-for-your-reuse-case.html",
+    "extremely-defensive-php/code-is-not-reusable/90-percent-of-everything-is-crap.html",
+    "extremely-defensive-php/code-is-not-reusable/dont-write-crap.html",
 
     "outro/thanks.html"
 ]
