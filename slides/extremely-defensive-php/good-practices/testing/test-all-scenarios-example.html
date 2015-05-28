@@ -4,7 +4,9 @@ interface AuthService
     /**
      * @return bool
      *
-     * @throws \InvalidArgumentException
+     * @throws InvalidArgumentException
+     * @throws IncompatibleCredentialsExample
+     * @throws UnavailableBackendException
      */
     public function authenticate(Credentials $credentials);
 }
