@@ -1,0 +1,9 @@
+<pre><code class="trim">
+class LoginRequest
+{
+    public function __clone()
+    {
+        $this->time = clone $this->time;
+    }
+}
+</code></pre>
