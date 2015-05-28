@@ -82,6 +82,7 @@
 
     "extremely-defensive-php/good-practices/parameter-types/no-mixed-parameter-types.html",
     "extremely-defensive-php/good-practices/parameter-types/mixed-parameter-types-mess-example.html",
+    "extremely-defensive-php/good-practices/parameter-types/mixed-parameter-types-fixed-example.html",
 
     "outro/thanks.html"
 ]
