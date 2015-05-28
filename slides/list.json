@@ -112,5 +112,7 @@
     "extremely-defensive-php/good-practices/serializable/disable-serialization.html",
     "extremely-defensive-php/good-practices/serializable/serialize-only-if-serializable.html",
 
+    "extremely-defensive-php/good-practices/testing/testing.html",
+
     "outro/thanks.html"
 ]
