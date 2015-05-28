@@ -1262,8 +1262,7 @@ class MyAwesomeThing
                 
                     
                         <section><pre><code class="trim">
-interface AuthService
-{
+interface AuthService {
     /**
      * @return bool
      *
@@ -1276,17 +1275,13 @@ interface AuthService
 </code></pre>
 
 <pre class="fragment"><code class="trim">
-class MyLogin
-{
+class MyLogin {
     public function __construct(AuthService $auth) { $this->auth = $auth; }
-    public function login($username, $password)
-    {
+    public function login($username, $password) {
         if ($this->auth->authenticate(new BasicCredentials($username, $password)) {
             // ...
-
             return true;
         }
-
         return false;
     }
 }
@@ -1322,7 +1317,7 @@ class MyLogin
 </p>
 
 <p class="fragment">
-    Such little code, <strong>3</strong> tests already!
+    Such little code, <strong>5</strong> tests already!
 </p>
 </section>
 
