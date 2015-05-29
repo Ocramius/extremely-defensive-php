@@ -11,12 +11,12 @@
     "introduction/i-work-on-doctrine.html",
 
     "extremely-defensive-php/the-talk/extremely-defensive-php.html",
-    "extremely-defensive-php/the-talk/what-is-this-talk-about.html",
     "extremely-defensive-php/the-talk/this-talk-is-about-extremism.html",
     {
         "background": "assets/img/feature-creep.jpg",
         "path":       null
     },
+    "extremely-defensive-php/the-talk/what-is-this-talk-about.html",
     "extremely-defensive-php/the-talk/know-your-limit.html",
 
     "extremely-defensive-php/what-is-defensive-coding/do-you-know-defensive-driving.html",
