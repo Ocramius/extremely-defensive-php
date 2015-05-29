@@ -125,5 +125,11 @@
     "extremely-defensive-php/good-practices/testing/test-all-scenarios-example.html",
     "extremely-defensive-php/good-practices/testing/test-all-scenarios-example-cases.html",
 
+    "extremely-defensive-php/recap/recap.html",
+    "extremely-defensive-php/recap/these-rules-are-inspirational.html",
+    "extremely-defensive-php/recap/trust-no-code.html",
+    "extremely-defensive-php/recap/reduce-features-to-the-minimum.html",
+    "extremely-defensive-php/recap/await-strict-return-strict.html",
+
     "outro/thanks.html"
 ]
