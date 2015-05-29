@@ -129,7 +129,7 @@
                     
                 
                     
-                        <section data-background="assets/img/feature-creep.png" ></section>
+                        <section data-background="assets/img/feature-creep.jpg" ></section>
 
                     
                     
@@ -823,6 +823,61 @@ class Spammer
 }
 </code></pre>
 </section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <span class="doctrine-color">Assert</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    Enforce
+    <span class="doctrine-color">Strict</span>
+    <span class="zf-color">Invariants</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code class="trim">
+class Train
+{
+    public function __construct(array $wagons)
+    {
+        $this->wagons = (function (Wagon ...$wagons) {
+            return $wagons;
+        })(...$wagons);
+    }
+}
+</code></pre>
+
+<p class="fragment">Yes, it's horrible, but it works</p>
+
+<p class="fragment">
+    (<a href="http://3v4l.org/GDahs" target="_blank">on PHP 7</a>)
+</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <a href="https://github.com/beberlei/assert" target="_blank">beberlei/assert</a>
+</h2>
+
+<p class="fragment">
+    Just use it!
+</p></section>
 
                     
                     
