@@ -129,10 +129,6 @@
     "extremely-defensive-php/good-practices/serializable/disable-serialization.html",
     "extremely-defensive-php/good-practices/serializable/serialize-only-if-serializable.html",
 
-    "extremely-defensive-php/good-practices/single-method-classes/and-if-you-apply-srp-to-the-extreme.html",
-    "extremely-defensive-php/good-practices/single-method-classes/good-object-oriented-programming-is-pretty-much-functional-programming.html",
-    "extremely-defensive-php/good-practices/single-method-classes/make-classes-invokable.html",
-
     "extremely-defensive-php/good-practices/testing/testing.html",
     "extremely-defensive-php/good-practices/testing/test-all-scenarios.html",
     "extremely-defensive-php/good-practices/testing/test-all-scenarios-example.html",
