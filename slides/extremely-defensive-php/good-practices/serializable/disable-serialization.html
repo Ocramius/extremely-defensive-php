@@ -3,7 +3,9 @@ class MyAwesomeThing
 {
     public function __sleep()
     {
-        throw new \BadMethodCallException('NO! MY THING! CANNOT HAZ!');
+        throw new BadMethodCallException(
+            'NO! MY THING! CANNOT HAZ!'
+        );
     }
 }
 </code></pre>
