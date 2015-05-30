@@ -467,6 +467,17 @@
                     
                 
                     
+                        <section><h1>
+    Assuming
+    <abbr title="Single responsibility, Open-closed, Liskov substitution, Interface segregation and Dependency inversion" class="doctrine-color">SOLID</abbr>
+    code
+</h1>
+</section>
+
+                    
+                    
+                
+                    
                         <section><h2>
     All
     <span class="php-color">State</span>
@@ -771,8 +782,7 @@ $dbConnection = new DbConnection(..., new FakeLogger());
 </p>
 
 <p class="fragment">
-    <!-- @TODO PSR-7 link -->
-    <a href="#TODO" class="doctrine-color">PSR-7</a>
+    <a href="https://github.com/php-fig/http-message" target="_blank" class="doctrine-color">PSR-7</a>
     got this <strong>right</strong>!
 </p>
 </section>
@@ -1257,7 +1267,9 @@ class MyAwesomeThing
 {
     public function __sleep()
     {
-        throw new \BadMethodCallException('NO! MY THING! CANNOT HAZ!');
+        throw new BadMethodCallException(
+            'NO! MY THING! CANNOT HAZ!'
+        );
     }
 }
 </code></pre>
@@ -1296,8 +1308,10 @@ class MyAwesomeThing
 </p>
 
 <p class="fragment">
-    <!-- @TODO lookup CRAP -->
-    Bring your <abbr title="">CRAP</abbr> score <code>&lt;= 2</code>
+    Bring your
+    <abbr title="Change Risk Anti-Patterns" class="doctrine-color">CRAP</abbr>
+    score
+    <code>&lt;= 2</code>
 </p>
 
 <p class="fragment">

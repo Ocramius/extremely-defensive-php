@@ -63,6 +63,7 @@
     "extremely-defensive-php/good-practices/good-practices.html",
 
     "extremely-defensive-php/good-practices/solid/assuming-solid-code.html",
+    "extremely-defensive-php/good-practices/solid/object-calisthenics.html",
 
     "extremely-defensive-php/good-practices/encapsulation/all-state-protected-from-external-access.html",
     "extremely-defensive-php/good-practices/encapsulation/getter-datetime-example.html",
