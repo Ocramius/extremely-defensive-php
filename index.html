@@ -161,7 +161,7 @@
 </p>
 
 <p class="fragment">
-    ... but please <span class="doctrine-color">think carefully</span> about what you will release
+    ... but please <span class="doctrine-color">be considerate</span> about what you <strong>release</strong>
 </p>
 </section>
 
@@ -170,19 +170,8 @@
                 
                     
                         <section><h2>
-    Do you know
-    <br/>
-    <span class="doctrine-color">Defensive Driving</span>?
+    Let's start in a <strong>bold</strong> way
 </h2>
-
-<p class="fragment">
-    <span class="doctrine-color">Defensive driving</span>
-    <br/>
-    =
-    <br/>
-    assuming that other drivers
-    <span class="php-color">will make mistakes</span>
-</p>
 </section>
 
                     
@@ -222,6 +211,26 @@
 
 <p class="fragment">
     Those who don't admit it, <strong>are</strong> the <span class="php-color">dumbest</span>!
+</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    Do you know
+    <br/>
+    <span class="doctrine-color">Defensive Driving</span>?
+</h2>
+
+<p class="fragment">
+    <span class="doctrine-color">Defensive driving</span>
+    <br/>
+    =
+    <br/>
+    assuming that other drivers
+    <span class="php-color">will make mistakes</span>
 </p>
 </section>
 
@@ -476,6 +485,240 @@
                 
                     
                         <section><h2>
+    Make
+    <span class="php-color">State</span>
+    <span class="doctrine-color">Immutable</span>
+</h2>
+
+<p class="fragment">
+    Greatly reduces
+    <span class="php-color">bugs</span>
+    and
+    <span class="php-color">cognitive load</span>
+</p>
+
+<p class="fragment">
+    <a href="https://github.com/php-fig/http-message" target="_blank" class="doctrine-color">PSR-7</a>
+    got this <strong>right</strong>!
+</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    What about <span class="zf-color">performance</span>?
+</h2>
+
+<p class="fragment">
+    Profile!
+</p>
+
+<p class="fragment">
+    Profile!
+</p>
+
+<p class="fragment">
+    Profile!
+</p>
+
+<p class="fragment">
+    <code>> O(log(n))</code>
+</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <strong>No</strong>
+    <span class="php-color">Setters</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <span class="php-color">Setters</span>
+    don't mean
+    <strong>Anything</strong>, anyway
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    The
+    <span class="doctrine-color">Constructor</span>
+    is the
+    <strong>ONLY</strong>
+    <span class="zf-color">injection point</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <strong>No</strong>
+    <span class="php-color">un-initialized properties</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <span class="php-color">Optional</span>
+    <span class="zf-color">Dependencies</span>?
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code data-trim>
+class DbConnection
+{
+    public function __construct(...)
+    {
+        // ...
+    }
+
+    public function setLogger(Logger $logger = null)
+    {
+        $this->logger = $logger;
+    }
+}
+</code></pre>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <span class="php-color">Optional dependencies</span>
+    <strong>Do Not Exist!</strong>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code data-trim>
+class DbConnection
+{
+    public function __construct(..., Logger $logger)
+    {
+        // ...
+    }
+
+    // look ma, no setters!
+}
+</code></pre>
+
+<pre><code data-trim>
+$dbConnection = new DbConnection(..., new FakeLogger());
+</code></pre>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <strong>Avoid</strong>
+    unnecessary
+    <span class="php-color">public methods</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <strong>Unnecessary</strong>
+    <br/>
+    =
+    <br/>
+    you can find
+    <br/>
+    <strong>another way</strong>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><blockquote class="quote">
+    A public method is like a child: once you've written it, you are going to maintain it for the rest of its life!
+    <cite>Stefan Priebsch</cite>
+</blockquote>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <strong>Avoid</strong>
+    <span class="php-color">Logic Switch Parameters</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code data-trim>
+class Spammer
+{
+    public function spam($email, $template, $optOutLink = false)
+    {
+        // yes, this is a really bad spammer
+    }
+}
+</code></pre>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code data-trim>
+class Spammer
+{
+    public function sendIllegalSpam($email, $template)
+    {
+        // without opt-out link
+    }
+
+    public function sendApparentlyLegalSpam($email, $template)
+    {
+        // with opt-out link
+    }
+}
+</code></pre>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
     All
     <span class="php-color">State</span>
     should be
@@ -618,240 +861,6 @@ class MoneyTransfer
 <p class="fragment">
     <strong>BY DEFAULT!</strong>
 </p>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><h2>
-    <strong>Avoid</strong>
-    unnecessary
-    <span class="php-color">public methods</span>
-</h2>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><h2>
-    <strong>Unnecessary</strong>
-    <br/>
-    =
-    <br/>
-    you can find
-    <br/>
-    <strong>another way</strong>
-</h2>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><blockquote class="quote">
-    A public method is like a child: once you've written it, you are going to maintain it for the rest of its life!
-    <cite>Stefan Priebsch</cite>
-</blockquote>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><h2>
-    The
-    <span class="doctrine-color">Constructor</span>
-    is the
-    <strong>ONLY</strong>
-    <span class="zf-color">injection point</span>
-</h2>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><h2>
-    <strong>No</strong>
-    <span class="php-color">un-initialized properties</span>
-</h2>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><h2>
-    <span class="php-color">Optional</span>
-    <span class="zf-color">Dependencies</span>?
-</h2>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><pre><code data-trim>
-class DbConnection
-{
-    public function __construct(...)
-    {
-        // ...
-    }
-
-    public function setLogger(Logger $logger = null)
-    {
-        $this->logger = $logger;
-    }
-}
-</code></pre>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><h2>
-    <span class="php-color">Optional dependencies</span>
-    <strong>Do Not Exist!</strong>
-</h2>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><pre><code data-trim>
-class DbConnection
-{
-    public function __construct(..., Logger $logger)
-    {
-        // ...
-    }
-
-    // look ma, no setters!
-}
-</code></pre>
-
-<pre><code data-trim>
-$dbConnection = new DbConnection(..., new FakeLogger());
-</code></pre>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><h2>
-    <strong>No</strong>
-    <span class="php-color">Setters</span>
-</h2>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><h2>
-    <span class="php-color">Setters</span>
-    don't mean
-    <strong>Anything</strong>, anyway
-</h2>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><h2>
-    Make
-    <span class="php-color">State</span>
-    <span class="doctrine-color">Immutable</span>
-</h2>
-
-<p class="fragment">
-    Greatly reduces
-    <span class="php-color">bugs</span>
-    and
-    <span class="php-color">cognitive load</span>
-</p>
-
-<p class="fragment">
-    <a href="https://github.com/php-fig/http-message" target="_blank" class="doctrine-color">PSR-7</a>
-    got this <strong>right</strong>!
-</p>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><h2>
-    What about <span class="zf-color">performance</span>?
-</h2>
-
-<p class="fragment">
-    Profile!
-</p>
-
-<p class="fragment">
-    Profile!
-</p>
-
-<p class="fragment">
-    Profile!
-</p>
-
-<p class="fragment">
-    <code>> O(log(n))</code>
-</p>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><h2>
-    <strong>Avoid</strong>
-    <span class="php-color">Logic Switch Parameters</span>
-</h2>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><pre><code data-trim>
-class Spammer
-{
-    public function spam($email, $template, $optOutLink = false)
-    {
-        // yes, this is a really bad spammer
-    }
-}
-</code></pre>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><pre><code data-trim>
-class Spammer
-{
-    public function sendIllegalSpam($email, $template)
-    {
-        // without opt-out link
-    }
-
-    public function sendApparentlyLegalSpam($email, $template)
-    {
-        // with opt-out link
-    }
-}
-</code></pre>
 </section>
 
                     

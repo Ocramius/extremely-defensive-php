@@ -24,12 +24,13 @@
     "extremely-defensive-php/the-talk/what-is-this-talk-about.html",
     "extremely-defensive-php/the-talk/know-your-limit.html",
 
-    "extremely-defensive-php/what-is-defensive-coding/do-you-know-defensive-driving.html",
+    "extremely-defensive-php/what-is-defensive-coding/lets-start-bold.html",
     "extremely-defensive-php/what-is-defensive-coding/you-are-dumb.html",
     "extremely-defensive-php/what-is-defensive-coding/no-i-do-not-mean-you.html",
     "extremely-defensive-php/what-is-defensive-coding/i-am-dumb.html",
     "extremely-defensive-php/what-is-defensive-coding/we-are-dumb.html",
     "extremely-defensive-php/what-is-defensive-coding/everyone-is-dumb.html",
+    "extremely-defensive-php/what-is-defensive-coding/do-you-know-defensive-driving.html",
     {
         "background": "assets/img/oprah-free-car.gif",
         "path":       null
@@ -65,6 +66,27 @@
     "extremely-defensive-php/good-practices/solid/assuming-solid-code.html",
     "extremely-defensive-php/good-practices/solid/assuming-some-object-calisthenics.html",
 
+    "extremely-defensive-php/good-practices/immutable-state/use-immutable-wherever-possible.html",
+    "extremely-defensive-php/good-practices/immutable-state/what-about-performance.html",
+
+    "extremely-defensive-php/good-practices/no-setters/no-setters.html",
+    "extremely-defensive-php/good-practices/no-setters/setters-do-not-mean-anything.html",
+
+    "extremely-defensive-php/good-practices/constructor-as-only-mutator/constructor-is-your-only-injection-point.html",
+    "extremely-defensive-php/good-practices/constructor-as-only-mutator/no-un-initialized-properties.html",
+    "extremely-defensive-php/good-practices/constructor-as-only-mutator/optional-dependencies.html",
+    "extremely-defensive-php/good-practices/constructor-as-only-mutator/logger-optional-example.html",
+    "extremely-defensive-php/good-practices/constructor-as-only-mutator/there-are-no-optional-dependencies.html",
+    "extremely-defensive-php/good-practices/constructor-as-only-mutator/logger-required-example.html",
+
+    "extremely-defensive-php/good-practices/avoid-useless-public-methods/avoid-unnecessary-public-methods.html",
+    "extremely-defensive-php/good-practices/avoid-useless-public-methods/unnecessary-not-very-striclty-required.html",
+    "extremely-defensive-php/good-practices/avoid-useless-public-methods/a-public-method-is-like-a-child.html",
+
+    "extremely-defensive-php/good-practices/logic-switch-parameters/avoid-logic-switch-parameters.html",
+    "extremely-defensive-php/good-practices/logic-switch-parameters/logic-switch-mailer-example.html",
+    "extremely-defensive-php/good-practices/logic-switch-parameters/logic-switch-mailer-fixed-example.html",
+
     "extremely-defensive-php/good-practices/encapsulation/all-state-protected-from-external-access.html",
     "extremely-defensive-php/good-practices/encapsulation/getter-datetime-example.html",
     "extremely-defensive-php/good-practices/encapsulation/getter-datetime-example-bug.html",
@@ -74,27 +96,6 @@
 
     "extremely-defensive-php/good-practices/private-properties/make-state-private.html",
     "extremely-defensive-php/good-practices/private-properties/all-properties-private-by-default.html",
-
-    "extremely-defensive-php/good-practices/avoid-useless-public-methods/avoid-unnecessary-public-methods.html",
-    "extremely-defensive-php/good-practices/avoid-useless-public-methods/unnecessary-not-very-striclty-required.html",
-    "extremely-defensive-php/good-practices/avoid-useless-public-methods/a-public-method-is-like-a-child.html",
-
-    "extremely-defensive-php/good-practices/constructor-as-only-mutator/constructor-is-your-only-injection-point.html",
-    "extremely-defensive-php/good-practices/constructor-as-only-mutator/no-un-initialized-properties.html",
-    "extremely-defensive-php/good-practices/constructor-as-only-mutator/optional-dependencies.html",
-    "extremely-defensive-php/good-practices/constructor-as-only-mutator/logger-optional-example.html",
-    "extremely-defensive-php/good-practices/constructor-as-only-mutator/there-are-no-optional-dependencies.html",
-    "extremely-defensive-php/good-practices/constructor-as-only-mutator/logger-required-example.html",
-
-    "extremely-defensive-php/good-practices/no-setters/no-setters.html",
-    "extremely-defensive-php/good-practices/no-setters/setters-do-not-mean-anything.html",
-
-    "extremely-defensive-php/good-practices/immutable-state/use-immutable-wherever-possible.html",
-    "extremely-defensive-php/good-practices/immutable-state/what-about-performance.html",
-
-    "extremely-defensive-php/good-practices/logic-switch-parameters/avoid-logic-switch-parameters.html",
-    "extremely-defensive-php/good-practices/logic-switch-parameters/logic-switch-mailer-example.html",
-    "extremely-defensive-php/good-practices/logic-switch-parameters/logic-switch-mailer-fixed-example.html",
 
     "extremely-defensive-php/good-practices/assert/assert.html",
     "extremely-defensive-php/good-practices/assert/enforce-strict-rules.html",
