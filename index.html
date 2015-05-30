@@ -460,7 +460,7 @@
                     
                 
                     
-                        <section><pre><code class="trim">
+                        <section><pre><code data-trim>
 class BankAccount
 {
     // ...
@@ -479,18 +479,18 @@ class BankAccount
                     
                 
                     
-                        <section><pre><code class="trim">
+                        <section><pre><code data-trim>
 $currentTime = new DateTime();
 
 $bankAccount1->setLastRefresh($currentTime);
 $bankAccount2->setLastRefresh($currentTime);
 </code></pre>
 
-<pre class="fragment"><code class="trim">
+<pre class="fragment"><code data-trim>
 // ... stuff
 </code></pre>
 
-<pre class="fragment"><code class="trim">
+<pre class="fragment"><code data-trim>
 $currentTime->setTimestamp($aTimestamp);
 </code></pre>
 
@@ -500,7 +500,7 @@ $currentTime->setTimestamp($aTimestamp);
                     
                 
                     
-                        <section><pre><code class="trim">
+                        <section><pre><code data-trim>
 class BankAccount
 {
     // ...
@@ -512,7 +512,7 @@ class BankAccount
 }
 </code></pre>
 
-<pre><code class="trim">
+<pre><code data-trim>
 class BankAccount
 {
     // ...
@@ -529,7 +529,7 @@ class BankAccount
                     
                 
                     
-                        <section><pre><code class="trim">
+                        <section><pre><code data-trim>
 class MoneyTransfer
 {
     public function __construct(Money $amount, DateTime $transferDate)
@@ -540,7 +540,7 @@ class MoneyTransfer
 }
 </code></pre>
 
-<pre class="fragment"><code class="trim">
+<pre class="fragment"><code data-trim>
 class MoneyTransfer
 {
     public function __construct(Money $amount, DateTime $transferDate)
@@ -666,7 +666,7 @@ class MoneyTransfer
                     
                 
                     
-                        <section><pre><code class="trim">
+                        <section><pre><code data-trim>
 class DbConnection
 {
     public function __construct(...)
@@ -696,7 +696,7 @@ class DbConnection
                     
                 
                     
-                        <section><pre><code class="trim">
+                        <section><pre><code data-trim>
 class DbConnection
 {
     public function __construct(..., Logger $logger)
@@ -708,7 +708,7 @@ class DbConnection
 }
 </code></pre>
 
-<pre><code class="trim">
+<pre><code data-trim>
 $dbConnection = new DbConnection(..., new FakeLogger());
 </code></pre>
 </section>
@@ -797,7 +797,7 @@ $dbConnection = new DbConnection(..., new FakeLogger());
                     
                 
                     
-                        <section><pre><code class="trim">
+                        <section><pre><code data-trim>
 class Spammer
 {
     public function spam($email, $template, $optOutLink = false)
@@ -812,7 +812,7 @@ class Spammer
                     
                 
                     
-                        <section><pre><code class="trim">
+                        <section><pre><code data-trim>
 class Spammer
 {
     public function sendIllegalSpam($email, $template)
@@ -852,7 +852,7 @@ class Spammer
                     
                 
                     
-                        <section><pre><code class="trim">
+                        <section><pre><code data-trim>
 class Train
 {
     public function __construct(array $wagons)
@@ -898,7 +898,7 @@ class Train
                     
                 
                     
-                        <section><pre><code class="trim">
+                        <section><pre><code data-trim>
 class PrisonerTransferRequest
 {
     /**
@@ -923,7 +923,7 @@ class PrisonerTransferRequest
                     
                 
                     
-                        <section><pre><code class="trim">
+                        <section><pre><code data-trim>
 class PrisonerTransferRequest
 {
     public function approve(PrisonerSecurityLevel $securityLevel)
@@ -965,7 +965,7 @@ class PrisonerTransferRequest
     <span class="zf-color">Data Validation</span>
 </h2>
 
-<pre class="fragment"><code class="trim">
+<pre class="fragment"><code data-trim>
 register(new EmailAddress('ocramius@gmail.com'));
 </code></pre>
 
@@ -1008,18 +1008,18 @@ register(new EmailAddress('ocramius@gmail.com'));
                     
                 
                     
-                        <section><pre><code class="trim">
+                        <section><pre><code data-trim>
 $thing
     ->doFoo();
     ->doBar();
 </code></pre>
 
-<pre class="fragment"><code class="trim">
+<pre class="fragment"><code data-trim>
 $thing = $thing->doFoo();
 $thing = $thing->doBar();
 </code></pre>
 
-<pre class="fragment"><code class="trim">
+<pre class="fragment"><code data-trim>
 $thing->doFoo();
 $thing->doBar();
 </code></pre>
@@ -1045,7 +1045,7 @@ $thing->doBar();
                     
                 
                     
-                        <section><pre><code class="trim">
+                        <section><pre><code data-trim>
 $thing->doFoo();
 $thing->doBar();
 </code></pre>
@@ -1132,7 +1132,7 @@ $thing->doBar();
                     
                 
                     
-                        <section><pre><code class="trim">
+                        <section><pre><code data-trim>
 class LoginRequest
 {
     public function __clone()
@@ -1164,16 +1164,15 @@ class LoginRequest
                 
                     
                         <section><h2>
-    Or
-    <strong>Disable</strong>
-    <span class="php-color">Cloning</span>
+    ... <strong>disable</strong>
+    <span class="php-color">Cloning</span>?
 </h2></section>
 
                     
                     
                 
                     
-                        <section><pre><code class="trim">
+                        <section><pre><code data-trim>
 class Human
 {
     public function __clone()
@@ -1226,7 +1225,7 @@ class Human
                     
                 
                     
-                        <section><pre><code class="trim">
+                        <section><pre><code data-trim>
 class MyAwesomeThing
 {
     public function __sleep()
@@ -1330,7 +1329,7 @@ class MyAwesomeThing
                     
                 
                     
-                        <section><pre><code class="trim">
+                        <section><pre><code data-trim>
 interface AuthService {
     /**
      * @return bool
@@ -1343,7 +1342,7 @@ interface AuthService {
 }
 </code></pre>
 
-<pre class="fragment"><code class="trim">
+<pre class="fragment"><code data-trim>
 class MyLogin {
     public function __construct(AuthService $auth) { $this->auth = $auth; }
     public function login($username, $password) {

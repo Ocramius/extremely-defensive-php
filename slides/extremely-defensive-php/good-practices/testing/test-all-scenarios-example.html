@@ -1,4 +1,4 @@
-<pre><code class="trim">
+<pre><code data-trim>
 interface AuthService {
     /**
      * @return bool
@@ -11,7 +11,7 @@ interface AuthService {
 }
 </code></pre>
 
-<pre class="fragment"><code class="trim">
+<pre class="fragment"><code data-trim>
 class MyLogin {
     public function __construct(AuthService $auth) { $this->auth = $auth; }
     public function login($username, $password) {
