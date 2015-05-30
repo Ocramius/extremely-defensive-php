@@ -1,0 +1,15 @@
+<pre><code data-trim>
+class DbConnection
+{
+    public function __construct(..., Logger $logger)
+    {
+        // ...
+    }
+
+    // look ma, no setters!
+}
+</code></pre>
+
+<pre><code data-trim>
+$dbConnection = new DbConnection(..., new FakeLogger());
+</code></pre>

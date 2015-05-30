@@ -129,6 +129,34 @@ section[data-background] [data-background], section[data-background] [data-backg
   image-rendering: -moz-crisp-edges;
   image-rendering: -o-crisp-edges;
   image-rendering: -webkit-optimize-contrast;
-  image-rendering: optimize-contrast;
+  image-rendering: pixelated;
   -ms-interpolation-mode: nearest-neighbor;
+}
+
+/* blockquotes: */
+.reveal section blockquote.quote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+.reveal section blockquote.quote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.reveal section blockquote.quote p { display: inline; }
+.reveal section blockquote.quote cite:before { content: ' - '; }
+
+.reveal section blockquote.quote cite {
+  display: block;
+  width: 100%;
+  text-align: right;
+  font-size: 20px;
 }

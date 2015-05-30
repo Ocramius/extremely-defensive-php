@@ -1,0 +1,12 @@
+<pre><code data-trim>
+class Human
+{
+    public function __clone()
+    {
+        throw new \DomainException(
+            'Why would you even clone me?!'
+            . 'It\'s currently illegal!'
+        );
+    }
+}
+</code></pre>

@@ -1,0 +1,17 @@
+<pre><code data-trim>
+class Train
+{
+    public function __construct(array $wagons)
+    {
+        $this->wagons = (function (Wagon ...$wagons) {
+            return $wagons;
+        })(...$wagons);
+    }
+}
+</code></pre>
+
+<p class="fragment">Yes, it's horrible, but it works</p>
+
+<p class="fragment">
+    (<a href="http://3v4l.org/GDahs" target="_blank">on PHP 7</a>)
+</p>
