@@ -6,6 +6,13 @@ public function addMoney(Money $money)
 
 public function markTransactionPaidWithMoney(Transaction $transaction, Money $money)
 {
-    $this->transactions[] = $transaction->paid();
+    $this->transactions[] = $transaction->paid($money);
 }
 </code></pre>
+
+<pre class="fragment"><code data-trim>
+$bankAccount->addMoney($money);
+$bankAccount->markTransactionPaidWithMoney($transaction, $money);
+</code></pre>
+
+<p class="fragment">These methods are part of a single interaction, but are exposed as separate public APIs</p>
