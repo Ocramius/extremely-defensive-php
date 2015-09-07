@@ -892,7 +892,11 @@ $bankAccount->addMoney($money);
 $bankAccount->markBillPaidWithMoney($bill, $money);
 </code></pre>
 
-<p class="fragment">These methods are part of a single interaction, but are exposed as separate public APIs</p>
+<p class="fragment">
+    These methods are part of a
+    <span class="doctrine-color">single interaction</span>,
+    but are exposed as <span class="php-color">separate public APIs</span>
+</p>
 </section>
 
                     
@@ -921,7 +925,55 @@ public function payBill(Bill $bill, Money $money)
 $bankAccount->payTransaction($transaction, $money);
 </code></pre>
 
-<p class="fragment">Single public API endpoint wrapping around state change</p>
+<p class="fragment">
+    <span class="doctrine-color">Single public API</span>
+    endpoint wrapping around
+    <span class="php-color">state change</span>
+</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
+    <strong>DO NOT</strong> assume <span class="php-color">Method Idempotence</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code data-trim>
+$userId    = $controller->request()->get('userId');
+$userRoles = $controller->request()->get('userRoles');
+</code></pre>
+
+<p class="fragment">
+    Subsequent method calls are <span class="php-color">assuming</span> that the request will be the <strong>same</strong>
+</p>
+
+<p class="fragment"><small>(apart of being <strong>foolish</strong> API)</small></p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code data-trim>
+$request = $controller->request();
+
+$userId    = $request->get('userId');
+$userRoles = $request->set('userRoles');
+</code></pre>
+
+<p class="fragment">
+    No <span class="php-color">assumption</span>
+    on what <code>request()</code>
+    does: we
+    <span class="doctrine-color">don't trust it</span>
+</p>
 </section>
 
                     

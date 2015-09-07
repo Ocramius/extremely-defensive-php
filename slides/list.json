@@ -102,6 +102,10 @@
     "extremely-defensive-php/good-practices/a-public-method-is-a-transaction/non-transactional-handling-example.html",
     "extremely-defensive-php/good-practices/a-public-method-is-a-transaction/transactional-handling-example.html",
 
+    "extremely-defensive-php/good-practices/do-not-assume-method-idempotence/do-not-assume-method-idempotence.html",
+    "extremely-defensive-php/good-practices/do-not-assume-method-idempotence/method-idempotence-assumption.html",
+    "extremely-defensive-php/good-practices/do-not-assume-method-idempotence/method-idempotence-unaware.html",
+
     "extremely-defensive-php/good-practices/assert/assert.html",
     "extremely-defensive-php/good-practices/assert/enforce-strict-rules.html",
     "extremely-defensive-php/good-practices/assert/train-example.html",
