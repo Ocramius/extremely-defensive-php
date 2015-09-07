@@ -1,0 +1,13 @@
+<pre><code data-trim>
+$request = $controller->request();
+
+$userId    = $request->get('userId');
+$userRoles = $request->set('userRoles');
+</code></pre>
+
+<p class="fragment">
+    No <span class="php-color">assumption</span>
+    on what <code>request()</code>
+    does: we
+    <span class="doctrine-color">don't trust it</span>
+</p>
