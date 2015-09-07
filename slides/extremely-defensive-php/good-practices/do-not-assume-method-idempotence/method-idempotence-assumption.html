@@ -1,6 +1,6 @@
 <pre><code data-trim>
-$controller->request()->set('userId', 123);
-$controller->request()->set('userRoles', ['admin', 'superadmin']);
+$userId    = $controller->request()->get('userId');
+$userRoles = $controller->request()->get('userRoles');
 </code></pre>
 
 <p class="fragment">
