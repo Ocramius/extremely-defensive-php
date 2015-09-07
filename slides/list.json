@@ -98,6 +98,10 @@
     "extremely-defensive-php/good-practices/private-properties/make-state-private.html",
     "extremely-defensive-php/good-practices/private-properties/all-properties-private-by-default.html",
 
+    "extremely-defensive-php/good-practices/a-public-method-is-a-transaction/a-public-method-is-a-transaction.html",
+    "extremely-defensive-php/good-practices/a-public-method-is-a-transaction/non-transactional-handling-example.html",
+    "extremely-defensive-php/good-practices/a-public-method-is-a-transaction/transactional-handling-example.html",
+
     "extremely-defensive-php/good-practices/assert/assert.html",
     "extremely-defensive-php/good-practices/assert/enforce-strict-rules.html",
     "extremely-defensive-php/good-practices/assert/train-example.html",

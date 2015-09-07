@@ -867,6 +867,68 @@ class MoneyTransfer
                 
                     
                         <section><h2>
+    A <span class="zf-color">Public Method</span> is a <span class="doctrine-color">Transaction</span>
+</h2>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code data-trim>
+public function addMoney(Money $money)
+{
+    $this->money[] = $money;
+}
+
+public function markBillPaidWithMoney(Bill $bill, Money $money)
+{
+    $this->bills[] = $bill->paid($money);
+}
+</code></pre>
+
+<pre class="fragment"><code data-trim>
+$bankAccount->addMoney($money);
+$bankAccount->markBillPaidWithMoney($bill, $money);
+</code></pre>
+
+<p class="fragment">These methods are part of a single interaction, but are exposed as separate public APIs</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><pre><code data-trim>
+private function addMoney(Money $money)
+{
+    $this->money[] = $money;
+}
+
+private function markTransactionPaidWithMoney(Bill $bill, Money $money)
+{
+    $this->bills[] = $bill->paid($money);
+}
+
+public function payBill(Bill $bill, Money $money)
+{
+    $bankAccount->addMoney($money);
+    $bankAccount->markBillPaidWithMoney($bill, $money);
+}
+</code></pre>
+
+<pre class="fragment"><code data-trim>
+$bankAccount->payTransaction($transaction, $money);
+</code></pre>
+
+<p class="fragment">Single public API endpoint wrapping around state change</p>
+</section>
+
+                    
+                    
+                
+                    
+                        <section><h2>
     <span class="doctrine-color">Assert</span>
 </h2>
 </section>
@@ -1044,7 +1106,7 @@ register(new EmailAddress('ocramius@gmail.com'));
                     
                         <section><pre><code data-trim>
 $thing
-    ->doFoo();
+    ->doFoo()
     ->doBar();
 </code></pre>
 
