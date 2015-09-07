@@ -1,0 +1,11 @@
+<pre><code data-trim>
+public function addMoney(Money $money)
+{
+    $this->money[] = $money;
+}
+
+public function markTransactionPaidWithMoney(Transaction $transaction, Money $money)
+{
+    $this->transactions[] = $transaction->paid();
+}
+</code></pre>
