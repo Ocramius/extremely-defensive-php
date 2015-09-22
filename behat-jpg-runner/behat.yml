@@ -1,0 +1,6 @@
+bootstrap: features/bootstrap
+default:
+  suites:
+    unit_of_work:
+      paths:    [ %paths.base%/features ]
+      contexts: [ ExtremelyDefensivePhpTest\ScreenshotPresentationContext ]
