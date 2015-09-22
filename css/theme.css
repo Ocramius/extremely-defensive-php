@@ -1705,7 +1705,7 @@ code {
 .reveal section img {
   border: 0;
   background: none;
-  box-shadow: 0 0 #000; }
+  box-shadow: none; }
 
 .reveal pre {
   width: 100%;
