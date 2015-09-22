@@ -6,6 +6,9 @@ use Behat\Behat\Context\Context;
 use Behat\Mink\Driver\Selenium2Driver;
 use Behat\Mink\Session;
 
+/**
+ * Indeed, as per @CiaranMcNulty, this stuff could indeed just be a script using Mink and the Selenium2Driver DIRECTLY.
+ */
 final class ScreenshotPresentationContext implements Context
 {
     /**
