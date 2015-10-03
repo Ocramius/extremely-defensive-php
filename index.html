@@ -990,7 +990,7 @@ $userRoles = $controller->request()->get('userRoles');
 $request = $controller->request();
 
 $userId    = $request->get('userId');
-$userRoles = $request->get('userRoles');
+$userRoles = $request->set('userRoles');
 </code></pre>
 
 <p class="fragment">
