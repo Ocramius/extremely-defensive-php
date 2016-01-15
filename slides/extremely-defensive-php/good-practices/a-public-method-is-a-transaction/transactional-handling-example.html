@@ -4,20 +4,20 @@ private function addMoney(Money $money)
     $this->money[] = $money;
 }
 
-private function markTransactionPaidWithMoney(Bill $bill, Money $money)
+private function markBillPaidWithMoney(Bill $bill, Money $money)
 {
     $this->bills[] = $bill->paid($money);
 }
 
 public function payBill(Bill $bill, Money $money)
 {
-    $bankAccount->addMoney($money);
-    $bankAccount->markBillPaidWithMoney($bill, $money);
+    $this->addMoney($money);
+    $this->markBillPaidWithMoney($bill, $money);
 }
 </code></pre>
 
 <pre class="fragment"><code data-trim>
-$bankAccount->payTransaction($transaction, $money);
+$bankAccount->payBill($bill, $money);
 </code></pre>
 
 <p class="fragment">
