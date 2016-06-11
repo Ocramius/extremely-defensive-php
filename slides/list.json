@@ -130,8 +130,8 @@
     "extremely-defensive-php/good-practices/final-classes/does-extending-the-interface-add-meaning.html",
     "extremely-defensive-php/good-practices/final-classes/blog-post-reference.html",
 
-    "extremely-defensive-php/good-practices/traits.html",
-    "extremely-defensive-php/good-practices/no-traits.html",
+    "extremely-defensive-php/good-practices/traits/traits.html",
+    "extremely-defensive-php/good-practices/traits/no-traits.html",
 
     "extremely-defensive-php/good-practices/deep-cloning/ensure-deep-cloning.html",
     "extremely-defensive-php/good-practices/deep-cloning/deep-cloning-example.html",
