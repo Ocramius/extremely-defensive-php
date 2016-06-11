@@ -8,10 +8,9 @@
     "introduction/i-work-for-roave.html",
     "introduction/i-work-on-zend-framework-2.html",
     "introduction/i-work-on-doctrine.html",
-    "introduction/canceling-all-talks.html",
     {
-        "background": "#000000",
-        "path":       "introduction/kung-fury.html"
+        "background": "assets/img/brexit.gif",
+        "path":       null
     },
 
     "extremely-defensive-php/the-talk/extremely-defensive-php.html",
@@ -130,6 +129,9 @@
     "extremely-defensive-php/good-practices/final-classes/an-extension-is-a-different-use-case.html",
     "extremely-defensive-php/good-practices/final-classes/does-extending-the-interface-add-meaning.html",
     "extremely-defensive-php/good-practices/final-classes/blog-post-reference.html",
+
+    "extremely-defensive-php/good-practices/traits.html",
+    "extremely-defensive-php/good-practices/no-traits.html",
 
     "extremely-defensive-php/good-practices/deep-cloning/ensure-deep-cloning.html",
     "extremely-defensive-php/good-practices/deep-cloning/deep-cloning-example.html",
