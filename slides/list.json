@@ -1,4 +1,8 @@
 [
+    {
+        "background": "assets/img/framework-days-2016-title-slide.png",
+        "path":       null
+    },
     "introduction/hello.html",
     "introduction/i-am-marco.html",
     "introduction/ocramius.html",
