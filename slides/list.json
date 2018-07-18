@@ -3,7 +3,6 @@
     "introduction/i-am-marco.html",
     "introduction/ocramius.html",
     "introduction/i-am-ocramius.html",
-    "introduction/gandalphp-tweet.html",
     "introduction/i-am-gandalphp.html",
     "introduction/i-work-for-roave.html",
     "introduction/i-work-on-zend-framework-2.html",
@@ -62,7 +61,6 @@
     "extremely-defensive-php/good-practices/solid/assuming-some-object-calisthenics.html",
 
     "extremely-defensive-php/good-practices/immutable-state/use-immutable-wherever-possible.html",
-    "extremely-defensive-php/good-practices/immutable-state/what-about-performance.html",
 
     "extremely-defensive-php/good-practices/no-setters/no-setters.html",
     "extremely-defensive-php/good-practices/no-setters/setters-do-not-mean-anything.html",
@@ -75,7 +73,6 @@
     "extremely-defensive-php/good-practices/constructor-as-only-mutator/logger-required-example.html",
 
     "extremely-defensive-php/good-practices/avoid-useless-public-methods/avoid-unnecessary-public-methods.html",
-    "extremely-defensive-php/good-practices/avoid-useless-public-methods/unnecessary-not-very-striclty-required.html",
     "extremely-defensive-php/good-practices/avoid-useless-public-methods/a-public-method-is-like-a-child.html",
 
     "extremely-defensive-php/good-practices/logic-switch-parameters/avoid-logic-switch-parameters.html",
@@ -119,32 +116,13 @@
     "extremely-defensive-php/good-practices/no-fluent-interfaces/fluent-interface-usages-example.html",
     "extremely-defensive-php/good-practices/no-fluent-interfaces/poka-yoke.html",
     "extremely-defensive-php/good-practices/no-fluent-interfaces/fluent-interface-usages-fixed-example.html",
-    "extremely-defensive-php/good-practices/no-fluent-interfaces/blog-post-reference.html",
 
     "extremely-defensive-php/good-practices/final-classes/final-by-default.html",
     "extremely-defensive-php/good-practices/final-classes/an-extension-is-a-different-use-case.html",
     "extremely-defensive-php/good-practices/final-classes/does-extending-the-interface-add-meaning.html",
-    "extremely-defensive-php/good-practices/final-classes/blog-post-reference.html",
 
     "extremely-defensive-php/good-practices/traits/traits.html",
     "extremely-defensive-php/good-practices/traits/no-traits.html",
-
-    "extremely-defensive-php/good-practices/deep-cloning/ensure-deep-cloning.html",
-    "extremely-defensive-php/good-practices/deep-cloning/deep-cloning-example.html",
-    "extremely-defensive-php/good-practices/deep-cloning/cloning-requires-encapsulated-state-understanding.html",
-    "extremely-defensive-php/good-practices/deep-cloning/so.html",
-    "extremely-defensive-php/good-practices/deep-cloning/disable-cloning.html",
-    "extremely-defensive-php/good-practices/deep-cloning/disable-cloning-example.html",
-
-    "extremely-defensive-php/good-practices/serializable/same-for-serialization.html",
-    "extremely-defensive-php/good-practices/serializable/is-it-really-serializable.html",
-    "extremely-defensive-php/good-practices/serializable/disable-serialization.html",
-    "extremely-defensive-php/good-practices/serializable/serialize-only-if-serializable.html",
-
-    "extremely-defensive-php/good-practices/testing/testing.html",
-    "extremely-defensive-php/good-practices/testing/test-all-scenarios.html",
-    "extremely-defensive-php/good-practices/testing/test-all-scenarios-example.html",
-    "extremely-defensive-php/good-practices/testing/test-all-scenarios-example-cases.html",
 
     "extremely-defensive-php/recap/recap.html",
     "extremely-defensive-php/recap/these-rules-are-inspirational.html",
@@ -152,5 +130,6 @@
     "extremely-defensive-php/recap/reduce-features-to-the-minimum.html",
     "extremely-defensive-php/recap/await-strict-return-strict.html",
 
-    "outro/thanks.html"
+    "outro/thanks.html",
+    "outro/tools.html"
 ]

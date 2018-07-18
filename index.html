@@ -53,24 +53,6 @@
                     
                 
                     
-                        <section><blockquote class="twitter-tweet" lang="en">
-    <p lang="en" dir="ltr">
-        <a href="https://twitter.com/Ocramius">@Ocramius</a>
-        <a href="https://twitter.com/asgrim">@asgrim</a>
-        <a href="https://twitter.com/RoaveTeam">@RoaveTeam</a>
-        Imma start calling you Gandalphp.
-    </p>
-    &mdash; Lee Davis (@leedavis81)
-    <a href="https://twitter.com/leedavis81/status/619104849490264064">9 July 2015</a>
-</blockquote>
-
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</section>
-
-                    
-                    
-                
-                    
                         <section><img src="assets/img/gandalphp.png" width="40%" class="crisp-image"/>
 </section>
 
@@ -500,6 +482,12 @@
     <span class="doctrine-color">Immutable</span>
 </h2>
 
+<h2 class="fragment">
+    Make
+    <span class="php-color">State Mutations</span>
+    <span class="doctrine-color">Pure</span>
+</h2>
+
 <p class="fragment">
     Greatly reduces
     <span class="php-color">bugs</span>
@@ -510,31 +498,6 @@
 <p class="fragment">
     <a href="https://github.com/php-fig/http-message" target="_blank" class="doctrine-color">PSR-7</a>
     got this <strong>right</strong>!
-</p>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><h2>
-    What about <span class="zf-color">performance</span>?
-</h2>
-
-<p class="fragment">
-    Profile!
-</p>
-
-<p class="fragment">
-    Profile!
-</p>
-
-<p class="fragment">
-    Profile!
-</p>
-
-<p class="fragment">
-    <code>> O(log(n))</code>
 </p>
 </section>
 
@@ -651,21 +614,6 @@ $dbConnection = new DbConnection(..., new FakeLogger());
     <strong>Avoid</strong>
     unnecessary
     <span class="php-color">public methods</span>
-</h2>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><h2>
-    <strong>Unnecessary</strong>
-    <br/>
-    =
-    <br/>
-    you can find
-    <br/>
-    <strong>another way</strong>
 </h2>
 </section>
 
@@ -959,8 +907,6 @@ $userRoles = $controller->request()->get('userRoles');
 <p class="fragment">
     Subsequent method calls are <span class="php-color">assuming</span> that the request will be the <strong>same</strong>
 </p>
-
-<p class="fragment"><small>(apart from being <strong>foolish</strong> API)</small></p>
 </section>
 
                     
@@ -975,10 +921,7 @@ $userRoles = $request->get('userRoles');
 </code></pre>
 
 <p class="fragment">
-    No <span class="php-color">assumption</span>
-    on what <code>request()</code>
-    does: we
-    <span class="doctrine-color">don't trust it</span>
+    <span class="doctrine-color">don't assume</span> <code>request()</code> to be <span class="php-color">pure</span>
 </p>
 </section>
 
@@ -1209,17 +1152,6 @@ $thing->doBar();
                     
                 
                     
-                        <section><p>
-    (There's a
-    <a href="http://ocramius.github.io/blog/fluent-interfaces-are-evil/" target="_blank">blogpost</a>
-    for that!)
-</p>
-</section>
-
-                    
-                    
-                
-                    
                         <section><h2>
     Make
     <span class="php-color">Classes</span>
@@ -1264,17 +1196,6 @@ $thing->doBar();
                     
                 
                     
-                        <section><p>
-    (There's a
-    <a href="http://ocramius.github.io/blog/when-to-declare-classes-final/" target="_blank">blogpost</a>
-    for that!)
-</p>
-</section>
-
-                    
-                    
-                
-                    
                         <section><h1>
     <span class="php-color">Traits</span>
 </h1>
@@ -1290,249 +1211,6 @@ $thing->doBar();
 
 <p class="fragment">Do you <strong>REALLY</strong> need to re-use that code?</p>
 <p class="fragment"><abbr title="Don't repeat yourself">DRY</abbr> or just hidden coupling?</p>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><h2>
-    <strong>Ensure</strong>
-    <span class="doctrine-color">Deep Cloning</span>
-</h2></section>
-
-                    
-                    
-                
-                    
-                        <section><pre><code data-trim>
-class LoginRequest
-{
-    public function __clone()
-    {
-        $this->time = clone $this->time;
-    }
-}
-</code></pre>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><p>
-    <span class="php-color">Cloning</span>
-    <strong>requires</strong>
-    <span class="zf-color">encapsulated state</span>
-    <strong>understanding</strong>
-</p>
-
-<p class="fragment">
-    ... which is a <strong>contradiction</strong>!
-</p>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><h2>
-    So ...
-</h2></section>
-
-                    
-                    
-                
-                    
-                        <section><h2>
-    ... <strong>disable</strong>
-    <span class="php-color">Cloning</span>?
-</h2></section>
-
-                    
-                    
-                
-                    
-                        <section><pre><code data-trim>
-class Human
-{
-    public function __clone()
-    {
-        throw new \DomainException(
-            'Why would you even clone me?!'
-            . 'It\'s currently illegal!'
-        );
-    }
-}
-</code></pre>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><h2>Same for <span class="php-color">Serialization</span>!</h2></section>
-
-                    
-                    
-                
-                    
-                        <section><h2>
-    Is it
-    <strong>really</strong>
-    <span class="zf-color">Serializable</span>?
-</h2>
-
-<p class="fragment">
-    Do you know the
-    <span class="php-color">lifecycle</span>
-    of
-    <strong>every</strong>
-    <span class="doctrine-color">dependency?</span>
-</p>
-
-<p class="fragment">
-    Is your
-    <span class="php-color">object</span>
-    even
-    <strong>supposed</strong>
-    to be
-    <span class="zf-color">stored</span>
-    somewhere?
-</p>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><pre><code data-trim>
-class MyAwesomeThing
-{
-    public function __sleep()
-    {
-        throw new BadMethodCallException(
-            'NO! MY THING! CANNOT HAZ!'
-        );
-    }
-}
-</code></pre>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><h2>
-    Maybe
-    <span class="php-color">serialize()</span>
-    <strong>only</strong>
-    if it is a
-    <span class="zf-color">Serializable</span>?
-</h2></section>
-
-                    
-                    
-                
-                    
-                        <section><h1><span class="doctrine-color">UNIT TESTING</span></h1></section>
-
-                    
-                    
-                
-                    
-                        <section><h2>
-    <span class="zf-color">Test</span>
-    <strong>all</strong>
-    <span class="doctrine-color">scenarios</span>
-</h2>
-
-<p class="fragment">
-    <strong>YES, <u>ALL</u> OF THEM!</strong>
-</p>
-
-<p class="fragment">
-    Bring your
-    <abbr title="Change Risk Anti-Patterns" class="doctrine-color">CRAP</abbr>
-    score
-    <code>&lt;= 2</code>
-</p>
-
-<p class="fragment">
-    It will make you cry.
-</p>
-
-<p class="fragment">
-    You will <strong>implore</strong> for less features.
-</p>
-
-<p class="fragment">
-    You will <strong>love</strong> having less features.
-</p>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><pre><code data-trim>
-interface AuthService {
-    /**
-     * @return bool
-     *
-     * @throws InvalidArgumentException
-     * @throws IncompatibleCredentialsException
-     * @throws UnavailableBackendException
-     */
-    public function authenticate(Credentials $credentials);
-}
-</code></pre>
-
-<pre class="fragment"><code data-trim>
-class MyLogin {
-    public function __construct(AuthService $auth) { $this->auth = $auth; }
-    public function login($username, $password) {
-        if ($this->auth->authenticate(new BasicCredentials($username, $password)) {
-            // ...
-            return true;
-        }
-        return false;
-    }
-}
-</code></pre>
-
-<p class="fragment">
-    What <strong>can happen</strong> here?
-</p>
-</section>
-
-                    
-                    
-                
-                    
-                        <section><p>
-    A <span class="php-color">boolean</span> <code>true</code> is returned
-</p>
-
-<p class="fragment">
-    A <span class="php-color">boolean</span> <code>false</code> is returned
-</p>
-
-<p class="fragment">
-    A <code class="php-color">InvalidArgumentException</code> is thrown
-</p>
-
-<p class="fragment">
-    A <code class="php-color">IncompatibleCredentialsException</code> is thrown
-</p>
-
-<p class="fragment">
-    A <code class="php-color">UnavailableBackendException</code> is thrown
-</p>
-
-<p class="fragment">
-    Such little code, <strong>5</strong> tests already!
-</p>
 </section>
 
                     
@@ -1607,6 +1285,21 @@ class MyLogin {
                     
                     
                 
+                    
+                        <section><h1><strong>Tools:</strong></h1>
+
+<ul>
+    <li>roave/security-advisories</li>
+    <li>phpstan/phpstan</li>
+    <li>doctrine/coding-standard</li>
+    <li>beberlei/assert</li>
+    <li>infection/infection</li>
+    <li>roave/backwards-compatibility-check</li>
+</ul></section>
+
+                    
+                    
+                
             </div>
         </div>
         <script src="bower_components/reveal.js/lib/js/head.min.js"></script>
@@ -1614,7 +1307,7 @@ class MyLogin {
 
         <script>
             Reveal.initialize({
-                controls:     true,
+                controls:     false,
                 progress:     true,
                 history:      true,
                 center:       true,

@@ -6,8 +6,5 @@ $userRoles = $request->get('userRoles');
 </code></pre>
 
 <p class="fragment">
-    No <span class="php-color">assumption</span>
-    on what <code>request()</code>
-    does: we
-    <span class="doctrine-color">don't trust it</span>
+    <span class="doctrine-color">don't assume</span> <code>request()</code> to be <span class="php-color">pure</span>
 </p>
